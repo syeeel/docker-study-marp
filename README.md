@@ -1,5 +1,20 @@
 # ゼロから始める Docker 入門
 
+# git clone から新たにレポジトリを作成する
+
+```
+git clone {gitリポジトリのURL} {新しいレポジトリ名}
+cd {新しいレポジトリ名}
+git remote remove origin
+rm -rf .git
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin {gitリポジトリのURL}
+git push -u origin main
+```
+
 # Mermaid を記述する方法
 
 <!-- Marpと認識させるおまじない -->
