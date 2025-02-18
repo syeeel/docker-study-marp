@@ -166,13 +166,14 @@ mindmap
 <div style="display: flex; justify-content: center; gap: 2rem;">
   <div>
     <p style="font-weight: bold; font-size: 40px;">従来の課題</p>
-    <p>環境構築に時間がかかる</p>
-    <p>チーム間で環境が異なる</p>
-    <p>本番環境との差異</p>
+    <p style="font-size: 30px;">環境構築に時間がかかる</p>
+    <p style="font-size: 30px;">チーム間で環境が異なる</p>
+    <p style="font-size: 30px;">本番環境との差異</p>
+    <p style="font-size: 30px;">メンテナンスが難しい</p>
   </div>
 
   <div style="flex-shrink: 0;">
-    <img src="https://www.docker.com/wp-content/uploads/2021/09/docker-containerized-appliction-blue-border_2.png" alt="Docker containers" style="border-radius: 10px;">
+    <img src="https://miro.medium.com/v2/resize:fit:1280/1*rJgmy0nos999rx5NvSijUQ.png" alt="Docker containers" style="border-radius: 10px; width: 450px;">
   </div>
 </div>
 
@@ -180,16 +181,88 @@ mindmap
 
 ## 1.3 仮想環境の種類
 
+### ハイパーバイザー（Hypervisor）とは
+
+<div style="display: flex; justify-content: space-between;">
+  <div style="width: 60%;">
+    <p>ハイパーバイザーは、物理的なハードウェア上で複数の仮想マシンを動作させるための基本ソフトウェアです。</p>
+    <p style="font-weight: bold;">主な種類：</p>
+    <ul>
+      <li>Type 1（ベアメタル型）
+        <ul>
+          <li>ハードウェアに直接インストール</li>
+          <li>例：VMware ESXi, Microsoft Hyper-V</li>
+        </ul>
+      </li>
+      <li>Type 2（ホスト型）
+        <ul>
+          <li>既存のOSの上で動作</li>
+          <li>例：VirtualBox, VMware Workstation</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  
+  <div style="width: 35%;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Hyperviseur.png" alt="Hypervisor Types" style="width: 100%; border-radius: 10px;">
+  </div>
+</div>
+
+---
+
+## 1.4 コンテナの登場
+
+<div style="display: flex; flex-direction: column; align-items: center">
+
+  <div>
+    <p style="font-weight: bold; font-size: 30px;">仮想マシン：完全な OS を仮想化</p>
+    <p style="font-weight: bold; font-size: 30px;">コンテナ：アプリケーション実行に必要な部分のみを仮想化</p>
+  </div>
+
+  <div style="display: flex; justify-content: center;">
+    <div style="flex-shrink: 0;">
+      <img src="https://www.docker.com/wp-content/uploads/2021/11/container-vm-whatcontainer_2.png" alt="VM vs Container" style="border-radius: 10px;">
+    </div>
+    <div style="flex-shrink: 0;">
+      <img src="https://www.docker.com/ja-jp/app/uploads/2021/11/docker-containerized-appliction-blue-border_2.png" alt="VM vs Container" style="border-radius: 10px;">
+    </div>
+  </div>
+</div>
+
+---
+
+## 1.5 仮想マシン vs コンテナ
+
 <div style="display: flex; justify-content: center; gap: 2rem;">
   <div>
-    <p style="font-weight: bold; font-size: 40px;">仮想マシン vs コンテナ</p>
-    <p>仮想マシン：完全な OS を仮想化</p>
-    <p>コンテナ：アプリケーション実行に必要な部分のみを仮想化</p>
-    <p>Dockerはコンテナ型仮想化を採用</p>
+    <p style="font-weight: bold; font-size: 30px;">OS配備 : 超高速</p>
+    <p style="font-weight: bold; font-size: 30px;">アプリ配備 : 超高速</p>
+    <p style="font-weight: bold; font-size: 30px;">アプリ : 超軽量</p>
+    <p style="font-weight: bold; font-size: 30px;">メモリ使用量 : 少ない</p>
+    <p style="font-weight: bold; font-size: 30px;">可搬性 : 高い</p>
+  </div>
+    <div style="flex-shrink: 0;">
+      <img src="https://www.docker.com/wp-content/uploads/2021/11/container-vm-whatcontainer_2.png" alt="VM vs Container" style="border-radius: 10px; width: 350px;">
+    </div>
+    <div style="flex-shrink: 0;">
+      <img src="https://www.docker.com/ja-jp/app/uploads/2021/11/docker-containerized-appliction-blue-border_2.png" alt="VM vs Container" style="border-radius: 10px; width: 350px;">
+    </div>
+</div>
+
+---
+
+## 1.6 Docker のイメージ
+
+<div style="display: flex; justify-content: center;">
+  <div>
+    <p style="font-size: 24px;">① Docker Hub等のリポジトリから公式のイメージを取得（pull）</p>
+    <p style="font-size: 24px;">② 取得イメージをもとにDockerFileを作成し、自作のイメージを作成（build）</p>
+    <p style="font-size: 24px;">③ イメージからコンテナを作成（create）</p>
+    <p style="font-size: 24px;">④ コンテナを起動（start）</p>
   </div>
 
   <div style="flex-shrink: 0;">
-    <img src="https://www.docker.com/wp-content/uploads/2021/11/container-vm-whatcontainer_2.png" alt="VM vs Container" style="border-radius: 10px;">
+    <img src="https://o2mamiblog.com/wp-content/uploads/2022/07/Docker-1_page-0001.jpg" alt="Dockerのイメージ" style="border-radius: 10px;width: 700px;">
   </div>
 </div>
 
@@ -207,6 +280,9 @@ brew install --cask docker
 # Docker Desktop for Windowsをインストール
 # https://www.docker.com/products/docker-desktop
 ```
+
+もしくは Docker Desktop をインストール
+https://www.docker.com/ja-jp/get-started/
 
 ---
 
@@ -230,33 +306,102 @@ docker stop <container_id>
 
 # 3. Docker の実践
 
-## 3.1 コンテナの基本操作
+## 3.1 Docker の基本操作
 
-```yaml
-# docker-compose.yml の例
-version: "3"
-services:
-  web:
-    build: .
-    ports:
-      - "8000:8000"
-    volumes:
-      - .:/code
-    environment:
-      - DEBUG=1
+既存のイメージを Docker Hub から取得する
+
+```bash
+# イメージの取得
+docker pull python:3.9
+
+# コンテナの作成と起動
+docker run -it python:3.9
+```
+
+起動したコンテナ上で python を実行する
+
+```python
+print("Hello, Docker!")
+
+```
+
+---
+
+python のバージョンを確認する
+
+```python
+import sys
+print(sys.version)
+```
+
+コンテナから抜ける
+
+```python
+exit()
+```
+
+---
+
+Dockerfile を作成してイメージを作成する
+
+以下の app.py を作成する
+
+```python
+# シンプルなPythonスクリプト
+print("Hello from Docker!")
+print("This is a minimal Docker example.")
+```
+
+同一フォルダに以下の Dockerfile を作成する
+
+```dockerfile
+FROM python:3.9
+
+WORKDIR /app
+
+COPY app.py .
+
+CMD ["python", "app.py"]
+```
+
+---
+
+Dockerfile をビルドする
+
+```bash
+docker build -t my-python-app .
+```
+
+コンテナを起動する
+
+```bash
+docker run -it my-python-app
+```
+
+コンテナを停止する
+
+```bash
+docker stop my-python-app
 ```
 
 ---
 
 ## 3.2 Docker Compose 入門
 
-<pre class="mermaid">
-graph LR
-    A[docker-compose.yml] --> B[コンテナ定義]
-    B --> C[ビルド]
-    C --> D[実行]
-    D --> E[管理]
-</pre>
+Docker Compose は、複数のコンテナを定義し、実行するためのツールです。これにより、複数のサービスを含むアプリケーションを簡単に管理できます。
+
+### Docker Compose のインストール
+
+Docker Compose をインストールするには、以下のコマンドを実行します。
+
+```bash
+# Macの場合（Homebrew）
+brew install docker-compose
+
+# Windowsの場合
+# Docker Desktop for Windowsをインストール
+# https://www.docker.com/products/docker-desktop
+```
 
 ---
 
