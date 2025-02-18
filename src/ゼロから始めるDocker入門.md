@@ -388,20 +388,156 @@ docker stop my-python-app
 
 ## 3.2 Docker Compose 入門
 
-Docker Compose は、複数のコンテナを定義し、実行するためのツールです。これにより、複数のサービスを含むアプリケーションを簡単に管理できます。
+Docker Compose は、複数の Docker コンテナを効率的に管理・実行するためのツールです。開発環境で複数のサービス（Web サーバーや DB など）を連携させる際に特に威力を発揮します。
 
-### Docker Compose のインストール
+---
 
-Docker Compose をインストールするには、以下のコマンドを実行します。
+### Docker Compose のメリット
+
+1. **複数コンテナの簡単な管理**
+   - 複数のコンテナを 1 つのコマンドで起動/停止
+   - 設定を一元管理できる
+   - 開発環境の再現性が向上
+2. **運用上のミス軽減**
+   - 手作業による設定ミスを防止
+   - 環境の一貫性を保証
+   - チーム間での共有が容易
+3. **ネットワーク設定の簡素化**
+   - コンテナ間の通信が自動設定
+   - ホスト名による通信が可能
+   - IP アドレス変更に強い
+
+---
+
+### compose.yaml の基本構造
+
+compose.yaml は、Docker Compose の設定ファイルです。以下は基本的な構造例です：
+
+```yaml
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/code
+    environment:
+      FLASK_ENV: development
+    depends_on:
+      - db
+
+  db:
+    image: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: example
+
+volumes:
+  postgres_data:
+```
+
+---
+
+### 主要な設定項目
+
+- **services**: アプリケーションを構成するコンテナの定義
+  - **build**: Dockerfile のパス
+  - **image**: 使用する Docker イメージ
+  - **ports**: ポートマッピング
+  - **volumes**: データの永続化設定
+  - **environment**: 環境変数の設定
+  - **depends_on**: 依存関係の定義
+
+---
+
+### 基本的なコマンド
 
 ```bash
-# Macの場合（Homebrew）
-brew install docker-compose
+# コンテナの起動（バックグラウンド実行）
+docker compose up -d
 
-# Windowsの場合
-# Docker Desktop for Windowsをインストール
-# https://www.docker.com/products/docker-desktop
+# コンテナの停止と削除
+docker compose down
+
+# コンテナの再起動
+docker compose restart
+
+# ログの確認
+docker compose logs
+
+# サービスの状態確認
+docker compose ps
 ```
+
+---
+
+### 実践例：Web アプリケーション環境の構築
+
+以下は、Python の Web アプリケーションと PostgreSQL を組み合わせた環境の例です：
+
+```yaml
+services:
+  web:
+    build: .
+    command: python app.py
+    volumes:
+      - .:/code
+    ports:
+      - "5000:5000"
+    environment:
+      - DATABASE_URL=postgresql://postgres:example@db:5432/myapp
+    depends_on:
+      - db
+```
+
+---
+
+```yaml
+  db:
+    image: postgres:13
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=example
+      - POSTGRES_DB=myapp
+
+volumes:
+  postgres_data:
+```
+
+対応する Dockerfile：
+
+```dockerfile
+FROM python:3.9
+WORKDIR /code
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+COPY . .
+CMD ["python", "app.py"]
+```
+
+### 開発のベストプラクティス
+
+1. **環境変数の活用**
+
+   - 機密情報は.env ファイルで管理
+   - 環境ごとの設定を分離
+
+2. **ボリュームの適切な使用**
+
+   - データの永続化
+   - 開発時のホットリロード
+
+3. **依存関係の管理**
+
+   - depends_on で起動順序を制御
+   - ヘルスチェックの実装
+
+4. **本番環境との整合性**
+   - 開発環境と本番環境の設定を近づける
+   - 環境固有の設定は分離
 
 ---
 
