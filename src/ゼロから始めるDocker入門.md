@@ -393,7 +393,7 @@ exit()
 
 Dockerfile を作成してイメージを作成する
 
-以下の app.py を作成する
+以下の `app.py` を作成する
 
 ```python
 # シンプルなPythonスクリプト
@@ -401,7 +401,7 @@ print("Hello from Docker!")
 print("This is a minimal Docker example.")
 ```
 
-同一フォルダに以下の Dockerfile を作成する
+同一フォルダに以下の `Dockerfile` を作成する
 
 ```dockerfile
 FROM python:3.9
@@ -553,57 +553,96 @@ docker compose ps
 
 ---
 
-## 4.5 実践例：Web アプリケーション環境の構築
+## 4.5 実践例：Go アプリケーション環境の構築
 
-以下は、Python の Web アプリケーションと PostgreSQL を組み合わせた環境の例です：
+以下は、Go のシンプルな API サーバーを構築する例です：
+
+`main.go`の内容：
+
+```go
+package main
+
+import (
+    "encoding/json"
+    "log"
+    "net/http"
+)
+
+type Response struct {
+    Message string `json:"message"`
+}
+```
+
+---
+
+```go
+func main() {
+    http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+        response := Response{Message: "Hello, World!"}
+        w.Header().Set("Content-Type", "application/json")
+        json.NewEncoder(w).Encode(response)
+    })
+
+    log.Println("Server starting on port 8080...")
+    if err := http.ListenAndServe(":8080", nil); err != nil {
+        log.Fatal(err)
+    }
+}
+```
+
+---
+
+`compose.yaml`の設定：
 
 ```yaml
 services:
-  web:
+  api:
     build: .
-    command: python app.py
-    volumes:
-      - .:/code
     ports:
-      - "5000:5000"
-    environment:
-      - DATABASE_URL=postgresql://postgres:example@db:5432/myapp
-    depends_on:
-      - db
-```
-
----
-
-```yaml
-  db:
-    image: postgres:13
+      - "8080:8080"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - .:/app
     environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=example
-      - POSTGRES_DB=myapp
+      - GO_ENV=development
 
 volumes:
-  postgres_data:
+  go_modules:
 ```
 
 ---
 
-対応する Dockerfile：
+対応する`Dockerfile`：
 
 ```dockerfile
-FROM python:3.9
-WORKDIR /code
-COPY requirements.txt .
-RUN pip install -r requirements.txt
+FROM golang:1.21-alpine
+
+WORKDIR /app
+
+# アプリケーションのソースコードをコピー
 COPY . .
-CMD ["python", "app.py"]
+
+# アプリケーションをビルドして実行
+CMD ["go", "run", "main.go"]
 ```
 
 ---
 
-# 4. 応用編と devcontainer
+アプリケーションの起動：
+
+```bash
+docker compose up --build
+```
+
+API の動作確認：
+
+```bash
+curl http://localhost:8080
+# 応答: {"message":"Hello, World!"}
+```
+
+---
+
+# 4. devcontainer
 
 ## 4.1 Docker Hub の活用
 
