@@ -251,7 +251,56 @@ mindmap
 
 ---
 
-## 1.6 Docker のイメージ
+## 1.6 仮想化の 5 レベル
+
+### 1. Instruction Set Architecture（ISA）レベル
+
+- プロセッサと命令セットの間を抽象化する仮想化
+- 異なる命令セットのエミュレーションを実現
+- コード解釈や動的バイナリトランスレーション技術を使用
+
+### 2. Hardware Abstraction Layer（HAL）レベル
+
+- I/O デバイスやメモリなどの物理デバイスと OS の間を抽象化
+- クラウド環境の Virtual Machine がこのレベルに該当
+- Hypervisor を使用して VM を作成・管理
+
+---
+
+### 3. OS レベル
+
+- OS とアプリケーションの間を抽象化
+- 隔離された環境を軽量に作成可能
+- Docker コンテナはこのレベルの仮想化の代表例
+
+### 4. Library レベル
+
+- ユーザーとライブラリ間を抽象化
+- User-level ABI や API エミュレーション
+- WINE、vCUDA などが該当
+
+---
+
+### 5. Application レベル
+
+- 単一アプリケーションの抽象化
+- Process-level virtualization とも呼ばれる
+- 高級言語実行環境で一般的に使用:
+  - JVM (Java Virtual Machine)
+  - Python インタプリタ
+  - Node.js の V8 エンジン
+  - Go ランタイム
+  - Ruby の YARV
+
+---
+
+<div style="display: flex; justify-content: center;">
+  <img src="https://www.hitechnectar.com/wp-content/uploads/2020/03/Five-Levels-of-Virtualization.jpg" alt="Five Levels of Virtualization" style="border-radius: 10px;">
+</div>
+
+---
+
+## 1.7 Docker のイメージ
 
 <div style="display: flex; justify-content: center;">
   <div>
@@ -386,9 +435,29 @@ docker stop my-python-app
 
 ---
 
-## 3.2 Docker Compose 入門
+# 4. Docker Compose 入門
 
 Docker Compose は、複数の Docker コンテナを効率的に管理・実行するためのツールです。開発環境で複数のサービス（Web サーバーや DB など）を連携させる際に特に威力を発揮します。
+
+<div style="display: flex; justify-content: center;">
+  <img src="https://future-architect.github.io/images/20240620a/20210117130925.jpg" alt="Docker Compose" style="border-radius: 10px; width: 700px;">
+</div>
+
+---
+
+## 4.1 Docker Compose とは
+
+<div style="display: flex; justify-content: center;">
+  <img src="https://www.kagoya.jp/howto/wp-content/uploads/dockercomposeimg.png.webp" alt="Docker Compose" style="border-radius: 10px; width: 700px;">
+</div>
+
+---
+
+## 4.2 Docker と Docker Compose の違い
+
+<div style="display: flex; justify-content: center;">
+  <img src="https://www.kagoya.jp/howto/wp-content/uploads/1f60e842dd5eb7b5c1eb066d36267426.png.webp" alt="Docker Compose" style="border-radius: 10px; width: 600px;">
+</div>
 
 ---
 
@@ -425,7 +494,6 @@ services:
       FLASK_ENV: development
     depends_on:
       - db
-
   db:
     image: postgres
     volumes:
@@ -451,7 +519,20 @@ volumes:
 
 ---
 
-### 基本的なコマンド
+## 4.3 Docker Compose のインストール
+
+```bash
+# Macの場合（Homebrew）
+brew install docker-compose
+
+# Windowsの場合
+# Docker Desktop for Windowsをインストール
+# https://www.docker.com/products/docker-desktop
+```
+
+---
+
+## 4.4 Docker Compose の基本的なコマンド
 
 ```bash
 # コンテナの起動（バックグラウンド実行）
@@ -472,7 +553,7 @@ docker compose ps
 
 ---
 
-### 実践例：Web アプリケーション環境の構築
+## 4.5 実践例：Web アプリケーション環境の構築
 
 以下は、Python の Web アプリケーションと PostgreSQL を組み合わせた環境の例です：
 
@@ -507,6 +588,8 @@ volumes:
   postgres_data:
 ```
 
+---
+
 対応する Dockerfile：
 
 ```dockerfile
@@ -517,27 +600,6 @@ RUN pip install -r requirements.txt
 COPY . .
 CMD ["python", "app.py"]
 ```
-
-### 開発のベストプラクティス
-
-1. **環境変数の活用**
-
-   - 機密情報は.env ファイルで管理
-   - 環境ごとの設定を分離
-
-2. **ボリュームの適切な使用**
-
-   - データの永続化
-   - 開発時のホットリロード
-
-3. **依存関係の管理**
-
-   - depends_on で起動順序を制御
-   - ヘルスチェックの実装
-
-4. **本番環境との整合性**
-   - 開発環境と本番環境の設定を近づける
-   - 環境固有の設定は分離
 
 ---
 
