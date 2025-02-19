@@ -628,6 +628,23 @@ CMD ["go", "run", "main.go"]
 
 ---
 
+フォルダの作成と移動:
+
+```bash
+mkdir go-app
+cd go-app
+```
+
+作成したフォルダに`main.go` `Dockerfile` `compose.yaml`を作成する
+
+```bash
+touch main.go
+touch Dockerfile
+touch compose.yaml
+```
+
+---
+
 アプリケーションの起動：
 
 ```bash
