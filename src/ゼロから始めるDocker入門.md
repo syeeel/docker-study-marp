@@ -461,7 +461,7 @@ Docker Compose は、複数の Docker コンテナを効率的に管理・実行
 
 ---
 
-### Docker Compose のメリット
+## 4.3Docker Compose のメリット
 
 1. **複数コンテナの簡単な管理**
    - 複数のコンテナを 1 つのコマンドで起動/停止
@@ -478,9 +478,9 @@ Docker Compose は、複数の Docker コンテナを効率的に管理・実行
 
 ---
 
-### compose.yaml の基本構造
+## 4.3 compose.yaml の基本構造
 
-compose.yaml は、Docker Compose の設定ファイルです。以下は基本的な構造例です：
+compose.yaml は Docker Compose の設定ファイルです。以下は基本的な構造例です：
 
 ```yaml
 services:
@@ -500,7 +500,6 @@ services:
       - postgres_data:/var/lib/postgresql/data
     environment:
       POSTGRES_PASSWORD: example
-
 volumes:
   postgres_data:
 ```
@@ -509,13 +508,15 @@ volumes:
 
 ### 主要な設定項目
 
-- **services**: アプリケーションを構成するコンテナの定義
-  - **build**: Dockerfile のパス
-  - **image**: 使用する Docker イメージ
-  - **ports**: ポートマッピング
-  - **volumes**: データの永続化設定
-  - **environment**: 環境変数の設定
-  - **depends_on**: 依存関係の定義
+| 設定項目        | 説明                                     |
+| --------------- | ---------------------------------------- |
+| **services**    | アプリケーションを構成するコンテナの定義 |
+| **build**       | Dockerfile のパス                        |
+| **image**       | 使用する Docker イメージ                 |
+| **ports**       | ポートマッピング                         |
+| **volumes**     | データの永続化設定                       |
+| **environment** | 環境変数の設定                           |
+| **depends_on**  | 依存関係の定義                           |
 
 ---
 
@@ -642,45 +643,295 @@ curl http://localhost:8080
 
 ---
 
-# 4. devcontainer
+# 5. Dev Container 入門
 
-## 4.1 Docker Hub の活用
+## 5.1 devcontainer とは
 
-- 公式イメージの利用
-- カスタムイメージの作成
-- イメージの共有とバージョン管理
+<div style="display: flex; justify-content: center;">
+  <img src="https://code.visualstudio.com/assets/docs/devcontainers/containers/architecture-containers.png" alt="Dev Container Architecture" style="border-radius: 10px; width: 700px;">
+</div>
+
+Visual Studio Code Dev Containers は、コンテナを完全な機能を備えた開発環境として使用できるようにする拡張機能です。
 
 ---
 
-## 4.2 VSCode と devcontainer
+## 5.2 devcontainer のメリット
+
+<div style="display: flex; justify-content: space-between;">
+  <div style="width: 45%;">
+    <h3>開発者にとって</h3>
+    <ul>
+      <li>環境構築の簡素化</li>
+      <li>チーム間での環境の統一</li>
+      <li>プロジェクト切り替えの容易さ</li>
+      <li>ローカル環境の汚染防止</li>
+    </ul>
+  </div>
+  <div style="width: 45%;">
+    <h3>チームにとって</h3>
+    <ul>
+      <li>新メンバーの参加がスムーズ</li>
+      <li>環境の標準化</li>
+      <li>トラブルシューティングの効率化</li>
+      <li>CI/CDとの親和性</li>
+    </ul>
+  </div>
+</div>
+
+---
+
+## 5.3 システム要件
+
+### ローカル/リモートホスト要件
+
+<div style="font-size: 20px;">
+
+| OS             | 要件                                                                                                                        |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Windows        | Docker Desktop 2.0+ (Windows 10 Pro/Enterprise)<br>Windows 10 Home (2004+)は Docker Desktop 2.3+と WSL 2 バックエンドが必要 |
+| macOS          | Docker Desktop 2.0+                                                                                                         |
+| Linux          | Docker CE/EE 18.06+と Docker Compose 1.21+                                                                                  |
+| リモートホスト | 最小 1GB RAM（推奨：2GB RAM、2 コア CPU）                                                                                   |
+
+</div>
+
+---
+
+## 5.4 インストール手順
+
+1. **VS Code のインストール**
+
+   - [VS Code 公式サイト](https://code.visualstudio.com/)からダウンロード
+
+2. **Dev Containers 拡張機能のインストール**
+   - VS Code の拡張機能マーケットプレイスから「Dev Containers」を検索
+   - もしくはコマンドラインから:
+
+```bash
+code --install-extension ms-vscode-remote.remote-containers
+```
+
+---
+
+### Dev Container のインストール
+
+<div style="display: flex; justify-content: center;">
+  <img src="https://blog.kinto-technologies.com/assets/blog/authors/torii/2022-12-10-dev-container/devcontainer-01.webp" alt="Dev Container Architecture" style="border-radius: 10px; width: 700px;">
+</div>
+
+---
+
+## 5.5 基本的な使い方
+
+### devcontainer.json の作成
 
 ```json
-// .devcontainer/devcontainer.json
 {
-  "name": "Python 3",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "context": ".."
+  "name": "Node.js & TypeScript",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye",
+  "forwardPorts": [3000],
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+    }
   },
-  "extensions": ["ms-python.python", "ms-python.vscode-pylance"]
+  "postCreateCommand": "npm install"
 }
 ```
 
 ---
 
-# まとめ
+### devcontainer.json の主要な設定項目
 
-- Docker の基本概念を理解する
-- 環境構築の自動化
-- コンテナによる開発環境の統一
-- devcontainer による効率的な開発
+<div style="font-size: 20px;">
+
+| 設定項目          | 説明                        | 例                                                    |
+| ----------------- | --------------------------- | ----------------------------------------------------- |
+| name              | コンテナの名前              | `"name": "Python 3"`                                  |
+| image             | 使用する Docker イメージ    | `"image": "mcr.microsoft.com/devcontainers/python:3"` |
+| build             | Dockerfile からのビルド設定 | `"build": { "dockerfile": "Dockerfile" }`             |
+| forwardPorts      | 転送するポート              | `"forwardPorts": [3000, 5000]`                        |
+| customizations    | VS Code 固有の設定          | `"customizations": { "vscode": { ... } }`             |
+| extensions        | インストールする拡張機能    | `"extensions": ["ms-python.python"]`                  |
+| settings          | VS Code 設定                | `"settings": { "python.linting.enabled": true }`      |
+| postCreateCommand | コンテナ作成後のコマンド    | `"postCreateCommand": "npm install"`                  |
+
+</div>
 
 ---
 
-# 参考資料・Q&A
+## 5.6 Dev Container Features
 
-## 参考資料
+Features は、開発コンテナに追加のツールやランタイムを簡単に追加できる機能です。
+
+```json
+{
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11"
+    }
+  }
+}
+```
+
+---
+
+## 5.7 実践的な例：Python プロジェクト
+
+### プロジェクト構造
+
+```
+myproject/
+├── .devcontainer/
+│   ├── devcontainer.json
+│   └── Dockerfile
+├── src/
+│   └── main.py
+└── requirements.txt
+```
+
+---
+
+### VS Code で Dev Container を開く
+
+<div style="text-align: center;">
+<p>VS Code 左下のメニューから「Dev Container」を選択する</p>
+  <img src="../docs/images/vscode-devcontainer-menu.png" alt="Dev Container Architecture" style="border-radius: 10px; width: 300px; margin: 10px auto;">
+</div>
+
+<div style="text-align: center;">
+<p>New Dev Container を選択する<p>
+  <img src="https://chigusa-web.com/wp-content/uploads/2023/04/2023-04-01_17h48_49.png" alt="Dev Container Architecture" style="border-radius: 10px; width: 700px;">
+</div>
+
+---
+
+### Dockerfile
+
+```dockerfile
+FROM mcr.microsoft.com/devcontainers/python:3.11
+
+WORKDIR /workspace
+
+COPY requirements.txt /tmp/pip-tmp/
+RUN pip3 --disable-pip-version-check --no-cache-dir install -r /tmp/pip-tmp/requirements.txt \
+    && rm -rf /tmp/pip-tmp
+
+USER vscode
+```
+
+---
+
+### devcontainer.json
+
+```json
+{
+  "name": "Python Project",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.black-formatter"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.linting.enabled": true,
+        "python.formatting.provider": "black"
+      }
+    }
+  },
+  "forwardPorts": [8000],
+  "postCreateCommand": "pip install --user -r requirements.txt",
+  "remoteUser": "vscode"
+}
+```
+
+---
+
+## 4.8 高度な設定
+
+### ボリュームマウントの最適化
+
+```json
+{
+  "mounts": [
+    "source=${localWorkspaceFolder}/data,target=/workspace/data,type=bind,consistency=cached",
+    "source=node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
+  ]
+}
+```
+
+### 環境変数の設定
+
+```json
+{
+  "remoteEnv": {
+    "DATABASE_URL": "postgresql://user:pass@localhost:5432/db",
+    "NODE_ENV": "development"
+  }
+}
+```
+
+---
+
+## 4.9 デバッグ設定
+
+### launch.json の例（Python）
+
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal"
+    }
+  ]
+}
+```
+
+---
+
+## 4.10 トラブルシューティング
+
+<div style="font-size: 20px;">
+
+| 問題                 | 解決策                                                                               |
+| -------------------- | ------------------------------------------------------------------------------------ |
+| コンテナが起動しない | - Docker サービスの状態確認<br>- リソース制限の確認<br>- ログの確認                  |
+| パフォーマンスが悪い | - ボリュームマウントの最適化<br>- WSL2 の使用（Windows）<br>- リソース割り当ての調整 |
+| 拡張機能が動作しない | - 拡張機能の再インストール<br>- VS Code の再起動<br>- 互換性の確認                   |
+
+</div>
+
+---
+
+# まとめ
+
+- Docker は、開発環境の標準化と共有を実現し、プロジェクトの一貫性を保つための強力なツール。
+- コンテナ技術により、チーム開発の効率が大幅に向上し、メンバー間の環境差を解消する。
+- Docker Compose を使用することで、複数のサービスを簡単に管理・実行でき、開発環境の
+  再現性が向上する。
+- VS Code との深い統合により、開発者は直感的に作業でき、迅速なフィードバックを得られる。
+- 適切な設定と運用により、開発ワークフローを最適化し、トラブルシューティングの時間を短縮する。
+- Dev Container を利用することで、開発環境の構築が簡素化され、新メンバーの参加がスムーズに。
+
+---
+
+# 参考資料
 
 - [Docker 公式ドキュメント](https://docs.docker.com/)
-- [Docker Compose ドキュメント](https://docs.docker.com/compose/)
-- [VSCode Remote Development](https://code.visualstudio.com/docs/remote/remote-overview)
+- [Docker Compose 公式ドキュメント](https://docs.docker.com/compose/)
+- [VS Code Dev Containers](https://code.visualstudio.com/docs/devcontainers/containers)
+- [Dev Container 仕様](https://containers.dev/)
+- [Dev Container Features](https://containers.dev/features)
