@@ -1,0 +1,15 @@
+# イメージの取得
+docker pull python:3.9
+
+# コンテナの作成と起動
+docker run -it python:3.9
+
+# 起動したコンテナ上でPythonを実行
+print("Hello, Docker!")
+
+# Pythonのバージョンを表示
+import sys
+print(sys.version)
+
+# コンテナを終了
+exit()
