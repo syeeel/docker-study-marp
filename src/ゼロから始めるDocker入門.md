@@ -411,6 +411,13 @@ exit()
 
 Dockerfile を作成してイメージを作成する
 
+フォルダを作成して移動する
+
+```bash
+mkdir python-sample
+cd python-sample
+```
+
 以下の `app.py` を作成する
 
 ```python
@@ -418,6 +425,8 @@ Dockerfile を作成してイメージを作成する
 print("Hello from Docker!")
 print("This is a minimal Docker example.")
 ```
+
+---
 
 同一フォルダに以下の `Dockerfile` を作成する
 
