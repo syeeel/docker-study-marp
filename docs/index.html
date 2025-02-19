@@ -649,22 +649,12 @@ section img {
 ;" data-marpit-pagination-total="51">
 <header>ゼロから始める Docker 入門</header>
 <h1 id="1-docker-%E3%81%AE%E5%9F%BA%E7%A4%8E%E7%9F%A5%E8%AD%98">1. Docker の基礎知識</h1>
-<pre class="mermaid">
-mindmap
-  root((Docker))
-    環境の統一
-      ローカル環境
-      サーバー環境
-      チーム開発
-    コンテナ化
-      アプリケーション
-      依存関係
-      設定
-    効率的な開発
-      迅速なデプロイ
-      スケーラビリティ
-      保守性
-</pre>
+<div style="text-align: center; margin-bottom: 40px;">
+  Docker は、アプリケーションをコンテナ化して開発、配布、実行するためのプラットフォームです。
+</div>
+<div style="display: flex; justify-content: center;">
+    <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="Docker" style="border-radius: 10px; width: 30%;" />
+</div>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
@@ -3889,7 +3879,7 @@ section img {
 }
 ;" data-marpit-pagination-total="51">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="43docker-compose-%E3%81%AE%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88">4.3Docker Compose のメリット</h2>
+<h2 id="43-docker-compose-%E3%81%AE%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88">4.3 Docker Compose のメリット</h2>
 <ol>
 <li><strong>複数コンテナの簡単な管理</strong>
 <ul>
@@ -4063,7 +4053,7 @@ section img {
 }
 ;" data-marpit-pagination-total="51">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="43-composeyaml-%E3%81%AE%E5%9F%BA%E6%9C%AC%E6%A7%8B%E9%80%A0">4.3 compose.yaml の基本構造</h2>
+<h2 id="44-composeyaml-%E3%81%AE%E5%9F%BA%E6%9C%AC%E6%A7%8B%E9%80%A0">4.4 compose.yaml の基本構造</h2>
 <p>compose.yaml は Docker Compose の設定ファイルです。以下は基本的な構造例です：</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-yaml"><span class="hljs-attr">services:</span>
   <span class="hljs-attr">web:</span>
@@ -4424,7 +4414,7 @@ section img {
 }
 ;" data-marpit-pagination-total="51">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="43-docker-compose-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">4.3 Docker Compose のインストール</h2>
+<h2 id="45-docker-compose-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">4.5 Docker Compose のインストール</h2>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash"><span class="hljs-comment"># Macの場合（Homebrew）</span>
 brew install docker-compose
 
@@ -4582,7 +4572,7 @@ section img {
 }
 ;" data-marpit-pagination-total="51">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="44-docker-compose-%E3%81%AE%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89">4.4 Docker Compose の基本的なコマンド</h2>
+<h2 id="46-docker-compose-%E3%81%AE%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89">4.6 Docker Compose の基本的なコマンド</h2>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash"><span class="hljs-comment"># コンテナの起動（バックグラウンド実行）</span>
 docker compose up -d
 
@@ -4748,7 +4738,7 @@ section img {
 }
 ;" data-marpit-pagination-total="51">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="45-%E5%AE%9F%E8%B7%B5%E4%BE%8Bgo-%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E7%92%B0%E5%A2%83%E3%81%AE%E6%A7%8B%E7%AF%89">4.5 実践例：Go アプリケーション環境の構築</h2>
+<h2 id="47-%E5%AE%9F%E8%B7%B5%E4%BE%8Bgo-%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E7%92%B0%E5%A2%83%E3%81%AE%E6%A7%8B%E7%AF%89">4.7 実践例：Go アプリケーション環境の構築</h2>
 <p>以下は、Go のシンプルな API サーバーを構築する例です：</p>
 <p><code>main.go</code>の内容：</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-go"><span class="hljs-keyword">package</span> main
@@ -7732,7 +7722,7 @@ section img {
 }
 ;" data-marpit-pagination-total="51">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="48-%E9%AB%98%E5%BA%A6%E3%81%AA%E8%A8%AD%E5%AE%9A">4.8 高度な設定</h2>
+<h2 id="58-%E9%AB%98%E5%BA%A6%E3%81%AA%E8%A8%AD%E5%AE%9A">5.8 高度な設定</h2>
 <h3 id="%E3%83%9C%E3%83%AA%E3%83%A5%E3%83%BC%E3%83%A0%E3%83%9E%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E6%9C%80%E9%81%A9%E5%8C%96">ボリュームマウントの最適化</h3>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-json"><span class="hljs-punctuation">{</span>
   <span class="hljs-attr">&quot;mounts&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
@@ -7899,7 +7889,7 @@ section img {
 }
 ;" data-marpit-pagination-total="51">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="49-%E3%83%87%E3%83%90%E3%83%83%E3%82%B0%E8%A8%AD%E5%AE%9A">4.9 デバッグ設定</h2>
+<h2 id="59-%E3%83%87%E3%83%90%E3%83%83%E3%82%B0%E8%A8%AD%E5%AE%9A">5.9 デバッグ設定</h2>
 <h3 id="launchjson-%E3%81%AE%E4%BE%8Bpython">launch.json の例（Python）</h3>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-json"><span class="hljs-punctuation">{</span>
   <span class="hljs-attr">&quot;version&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;0.2.0&quot;</span><span class="hljs-punctuation">,</span>
@@ -8064,7 +8054,7 @@ section img {
 }
 ;" data-marpit-pagination-total="51">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="410-%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0">4.10 トラブルシューティング</h2>
+<h2 id="510-%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0">5.10 トラブルシューティング</h2>
 <div style="font-size: 20px;">
 <table>
 <thead>
