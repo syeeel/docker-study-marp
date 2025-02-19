@@ -154,7 +154,7 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
 <script type="module">
 import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.min.mjs';
@@ -313,22 +313,20 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
 <h1 id="%E7%9B%AE%E6%AC%A1">目次</h1>
 <ol>
-<li>Docker の基礎知識
+<li>
+<p>Docker の基礎知識</p>
 <ul>
 <li>なぜ Docker が必要か？</li>
 <li>環境構築の課題</li>
 <li>仮想環境の種類</li>
-</ul>
-</li>
-<li>環境準備
-<ul>
-<li>Docker のインストール</li>
-<li>基本的なコマンド</li>
-<li>ターミナルの使い方</li>
+<li>コンテナの登場</li>
+<li>仮想マシン vs コンテナ</li>
+<li>仮想化の 5 レベル</li>
+<li>Docker のイメージ</li>
 </ul>
 </li>
 </ol>
@@ -480,21 +478,22 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<ol start="3">
-<li>Docker の実践
+<ol start="2">
+<li>
+<p>環境準備</p>
 <ul>
-<li>コンテナの基本操作</li>
-<li>Docker Compose 入門</li>
-<li>イメージの管理</li>
+<li>Docker のインストール</li>
+<li>基本的なコマンド</li>
 </ul>
 </li>
-<li>応用編と devcontainer
+<li>
+<p>Docker の実践</p>
 <ul>
-<li>Docker Hub の活用</li>
-<li>VSCode と devcontainer</li>
-<li>ベストプラクティス</li>
+<li>Docker の基本操作</li>
+<li>Dockerfile の作成</li>
+<li>イメージのビルドと実行</li>
 </ul>
 </li>
 </ol>
@@ -646,15 +645,21 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h1 id="1-docker-%E3%81%AE%E5%9F%BA%E7%A4%8E%E7%9F%A5%E8%AD%98">1. Docker の基礎知識</h1>
-<div style="text-align: center; margin-bottom: 40px;">
-  Docker は、アプリケーションをコンテナ化して開発、配布、実行するためのプラットフォームです。
-</div>
-<div style="display: flex; justify-content: center;">
-    <img src="https://kazulog.fun/wp-content/uploads/2023/12/Docker-Logo.png" alt="Docker" style="border-radius: 10px; width: 50%;" />
-</div>
+<ol start="4">
+<li>
+<p>Docker Compose 入門</p>
+<ul>
+<li>Docker Compose とは</li>
+<li>Docker と Docker Compose の違い</li>
+<li>Docker Compose のメリット</li>
+<li>compose.yaml の基本構造</li>
+<li>インストールと基本コマンド</li>
+<li>実践例：Go アプリケーション環境の構築</li>
+</ul>
+</li>
+</ol>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
@@ -803,28 +808,23 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="11-%E3%81%AA%E3%81%9C-docker-%E3%81%8C%E5%BF%85%E8%A6%81%E3%81%8B">1.1 なぜ Docker が必要か？</h2>
-<p>開発者が直面する一般的な問題：</p>
+<ol start="5">
+<li>Dev Container 入門
 <ul>
-<li>
-<p><strong>環境の違い</strong></p>
-<ul>
-<li>&quot;自分の環境では動くのに...&quot;</li>
-<li>本番環境との差異</li>
-<li>チームメンバー間の環境差</li>
+<li>devcontainer とは</li>
+<li>devcontainer のメリット</li>
+<li>システム要件とインストール</li>
+<li>基本的な使い方</li>
+<li>Dev Container Features</li>
+<li>実践的な例：Python プロジェクト</li>
+<li>高度な設定</li>
+<li>デバッグ設定</li>
+<li>トラブルシューティング</li>
 </ul>
 </li>
-<li>
-<p><strong>依存関係の管理</strong></p>
-<ul>
-<li>ライブラリのバージョン</li>
-<li>システムの設定</li>
-<li>複雑な環境構築</li>
-</ul>
-</li>
-</ul>
+</ol>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
@@ -973,20 +973,14 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="12-%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89%E3%81%AE%E8%AA%B2%E9%A1%8C">1.2 環境構築の課題</h2>
-<div style="display: flex; justify-content: center; gap: 2rem;">
-  <div>
-    <p style="font-weight: bold; font-size: 40px;">従来の課題</p>
-    <p style="font-size: 30px;">環境構築に時間がかかる</p>
-    <p style="font-size: 30px;">チーム間で環境が異なる</p>
-    <p style="font-size: 30px;">本番環境との差異</p>
-    <p style="font-size: 30px;">メンテナンスが難しい</p>
-  </div>
-  <div style="flex-shrink: 0;">
-    <img src="https://miro.medium.com/v2/resize:fit:1280/1*rJgmy0nos999rx5NvSijUQ.png" alt="Docker containers" style="border-radius: 10px; width: 450px;" />
-  </div>
+<h1 id="1-docker-%E3%81%AE%E5%9F%BA%E7%A4%8E%E7%9F%A5%E8%AD%98">1. Docker の基礎知識</h1>
+<div style="text-align: center; margin-bottom: 40px;">
+  Docker は、アプリケーションをコンテナ化して開発、配布、実行するためのプラットフォームです。
+</div>
+<div style="display: flex; justify-content: center;">
+    <img src="https://kazulog.fun/wp-content/uploads/2023/12/Docker-Logo.png" alt="Docker" style="border-radius: 10px; width: 50%;" />
 </div>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
@@ -1136,33 +1130,28 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="13-%E4%BB%AE%E6%83%B3%E7%92%B0%E5%A2%83%E3%81%AE%E7%A8%AE%E9%A1%9E">1.3 仮想環境の種類</h2>
-<h3 id="%E3%83%8F%E3%82%A4%E3%83%91%E3%83%BC%E3%83%90%E3%82%A4%E3%82%B6%E3%83%BChypervisor%E3%81%A8%E3%81%AF">ハイパーバイザー（Hypervisor）とは</h3>
-<div style="display: flex; justify-content: space-between;">
-  <div style="width: 60%;">
-    <p>ハイパーバイザーは、物理的なハードウェア上で複数の仮想マシンを動作させるための基本ソフトウェアです。</p>
-    <p style="font-weight: bold;">主な種類：</p>
-    <ul>
-      <li>Type 1（ベアメタル型）
-        <ul>
-          <li>ハードウェアに直接インストール</li>
-          <li>例：VMware ESXi, Microsoft Hyper-V</li>
-        </ul>
-      </li>
-      <li>Type 2（ホスト型）
-        <ul>
-          <li>既存のOSの上で動作</li>
-          <li>例：VirtualBox, VMware Workstation</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-  <div style="width: 35%;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Hyperviseur.png" alt="Hypervisor Types" style="width: 100%; border-radius: 10px;" />
-  </div>
-</div>
+<h2 id="11-%E3%81%AA%E3%81%9C-docker-%E3%81%8C%E5%BF%85%E8%A6%81%E3%81%8B">1.1 なぜ Docker が必要か？</h2>
+<p>開発者が直面する一般的な問題：</p>
+<ul>
+<li>
+<p><strong>環境の違い</strong></p>
+<ul>
+<li>&quot;自分の環境では動くのに...&quot;</li>
+<li>本番環境との差異</li>
+<li>チームメンバー間の環境差</li>
+</ul>
+</li>
+<li>
+<p><strong>依存関係の管理</strong></p>
+<ul>
+<li>ライブラリのバージョン</li>
+<li>システムの設定</li>
+<li>複雑な環境構築</li>
+</ul>
+</li>
+</ul>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
@@ -1311,21 +1300,19 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="14-%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E3%81%AE%E7%99%BB%E5%A0%B4">1.4 コンテナの登場</h2>
-<div style="display: flex; flex-direction: column; align-items: center">
+<h2 id="12-%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89%E3%81%AE%E8%AA%B2%E9%A1%8C">1.2 環境構築の課題</h2>
+<div style="display: flex; justify-content: center; gap: 2rem;">
   <div>
-    <p style="font-weight: bold; font-size: 30px;">仮想マシン：完全な OS を仮想化</p>
-    <p style="font-weight: bold; font-size: 30px;">コンテナ：アプリケーション実行に必要な部分のみを仮想化</p>
+    <p style="font-weight: bold; font-size: 40px;">従来の課題</p>
+    <p style="font-size: 30px;">環境構築に時間がかかる</p>
+    <p style="font-size: 30px;">チーム間で環境が異なる</p>
+    <p style="font-size: 30px;">本番環境との差異</p>
+    <p style="font-size: 30px;">メンテナンスが難しい</p>
   </div>
-  <div style="display: flex; justify-content: center;">
-    <div style="flex-shrink: 0;">
-      <img src="https://www.docker.com/wp-content/uploads/2021/11/container-vm-whatcontainer_2.png" alt="VM vs Container" style="border-radius: 10px;" />
-    </div>
-    <div style="flex-shrink: 0;">
-      <img src="https://www.docker.com/ja-jp/app/uploads/2021/11/docker-containerized-appliction-blue-border_2.png" alt="VM vs Container" style="border-radius: 10px;" />
-    </div>
+  <div style="flex-shrink: 0;">
+    <img src="https://miro.medium.com/v2/resize:fit:1280/1*rJgmy0nos999rx5NvSijUQ.png" alt="Docker containers" style="border-radius: 10px; width: 450px;" />
   </div>
 </div>
 <footer>©2025 Satoshi Yoshimura</footer>
@@ -1476,23 +1463,32 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="15-%E4%BB%AE%E6%83%B3%E3%83%9E%E3%82%B7%E3%83%B3-vs-%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A">1.5 仮想マシン vs コンテナ</h2>
-<div style="display: flex; justify-content: center; gap: 2rem;">
-  <div>
-    <p style="font-weight: bold; font-size: 30px;">OS配備 : 超高速</p>
-    <p style="font-weight: bold; font-size: 30px;">アプリ配備 : 超高速</p>
-    <p style="font-weight: bold; font-size: 30px;">アプリ : 超軽量</p>
-    <p style="font-weight: bold; font-size: 30px;">メモリ使用量 : 少ない</p>
-    <p style="font-weight: bold; font-size: 30px;">可搬性 : 高い</p>
+<h2 id="13-%E4%BB%AE%E6%83%B3%E7%92%B0%E5%A2%83%E3%81%AE%E7%A8%AE%E9%A1%9E">1.3 仮想環境の種類</h2>
+<h3 id="%E3%83%8F%E3%82%A4%E3%83%91%E3%83%BC%E3%83%90%E3%82%A4%E3%82%B6%E3%83%BChypervisor%E3%81%A8%E3%81%AF">ハイパーバイザー（Hypervisor）とは</h3>
+<div style="display: flex; justify-content: space-between;">
+  <div style="width: 60%;">
+    <p>ハイパーバイザーは、物理的なハードウェア上で複数の仮想マシンを動作させるための基本ソフトウェアです。</p>
+    <p style="font-weight: bold;">主な種類：</p>
+    <ul>
+      <li>Type 1（ベアメタル型）
+        <ul>
+          <li>ハードウェアに直接インストール</li>
+          <li>例：VMware ESXi, Microsoft Hyper-V</li>
+        </ul>
+      </li>
+      <li>Type 2（ホスト型）
+        <ul>
+          <li>既存のOSの上で動作</li>
+          <li>例：VirtualBox, VMware Workstation</li>
+        </ul>
+      </li>
+    </ul>
   </div>
-    <div style="flex-shrink: 0;">
-      <img src="https://www.docker.com/wp-content/uploads/2021/11/container-vm-whatcontainer_2.png" alt="VM vs Container" style="border-radius: 10px; width: 350px;" />
-    </div>
-    <div style="flex-shrink: 0;">
-      <img src="https://www.docker.com/ja-jp/app/uploads/2021/11/docker-containerized-appliction-blue-border_2.png" alt="VM vs Container" style="border-radius: 10px; width: 350px;" />
-    </div>
+  <div style="width: 35%;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Hyperviseur.png" alt="Hypervisor Types" style="width: 100%; border-radius: 10px;" />
+  </div>
 </div>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
@@ -1642,21 +1638,23 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="16-%E4%BB%AE%E6%83%B3%E5%8C%96%E3%81%AE-5-%E3%83%AC%E3%83%99%E3%83%AB">1.6 仮想化の 5 レベル</h2>
-<h3 id="1-instruction-set-architectureisa%E3%83%AC%E3%83%99%E3%83%AB">1. Instruction Set Architecture（ISA）レベル</h3>
-<ul>
-<li>プロセッサと命令セットの間を抽象化する仮想化</li>
-<li>異なる命令セットのエミュレーションを実現</li>
-<li>コード解釈や動的バイナリトランスレーション技術を使用</li>
-</ul>
-<h3 id="2-hardware-abstraction-layerhal%E3%83%AC%E3%83%99%E3%83%AB">2. Hardware Abstraction Layer（HAL）レベル</h3>
-<ul>
-<li>I/O デバイスやメモリなどの物理デバイスと OS の間を抽象化</li>
-<li>クラウド環境の Virtual Machine がこのレベルに該当</li>
-<li>Hypervisor を使用して VM を作成・管理</li>
-</ul>
+<h2 id="14-%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E3%81%AE%E7%99%BB%E5%A0%B4">1.4 コンテナの登場</h2>
+<div style="display: flex; flex-direction: column; align-items: center">
+  <div>
+    <p style="font-weight: bold; font-size: 30px;">仮想マシン：完全な OS を仮想化</p>
+    <p style="font-weight: bold; font-size: 30px;">コンテナ：アプリケーション実行に必要な部分のみを仮想化</p>
+  </div>
+  <div style="display: flex; justify-content: center;">
+    <div style="flex-shrink: 0;">
+      <img src="https://www.docker.com/wp-content/uploads/2021/11/container-vm-whatcontainer_2.png" alt="VM vs Container" style="border-radius: 10px;" />
+    </div>
+    <div style="flex-shrink: 0;">
+      <img src="https://www.docker.com/ja-jp/app/uploads/2021/11/docker-containerized-appliction-blue-border_2.png" alt="VM vs Container" style="border-radius: 10px;" />
+    </div>
+  </div>
+</div>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
@@ -1805,20 +1803,24 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h3 id="3-os-%E3%83%AC%E3%83%99%E3%83%AB">3. OS レベル</h3>
-<ul>
-<li>OS とアプリケーションの間を抽象化</li>
-<li>隔離された環境を軽量に作成可能</li>
-<li>Docker コンテナはこのレベルの仮想化の代表例</li>
-</ul>
-<h3 id="4-library-%E3%83%AC%E3%83%99%E3%83%AB">4. Library レベル</h3>
-<ul>
-<li>ユーザーとライブラリ間を抽象化</li>
-<li>User-level ABI や API エミュレーション</li>
-<li>WINE、vCUDA などが該当</li>
-</ul>
+<h2 id="15-%E4%BB%AE%E6%83%B3%E3%83%9E%E3%82%B7%E3%83%B3-vs-%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A">1.5 仮想マシン vs コンテナ</h2>
+<div style="display: flex; justify-content: center; gap: 2rem;">
+  <div>
+    <p style="font-weight: bold; font-size: 30px;">OS配備 : 超高速</p>
+    <p style="font-weight: bold; font-size: 30px;">アプリ配備 : 超高速</p>
+    <p style="font-weight: bold; font-size: 30px;">アプリ : 超軽量</p>
+    <p style="font-weight: bold; font-size: 30px;">メモリ使用量 : 少ない</p>
+    <p style="font-weight: bold; font-size: 30px;">可搬性 : 高い</p>
+  </div>
+    <div style="flex-shrink: 0;">
+      <img src="https://www.docker.com/wp-content/uploads/2021/11/container-vm-whatcontainer_2.png" alt="VM vs Container" style="border-radius: 10px; width: 350px;" />
+    </div>
+    <div style="flex-shrink: 0;">
+      <img src="https://www.docker.com/ja-jp/app/uploads/2021/11/docker-containerized-appliction-blue-border_2.png" alt="VM vs Container" style="border-radius: 10px; width: 350px;" />
+    </div>
+</div>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
@@ -1967,21 +1969,20 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h3 id="5-application-%E3%83%AC%E3%83%99%E3%83%AB">5. Application レベル</h3>
+<h2 id="16-%E4%BB%AE%E6%83%B3%E5%8C%96%E3%81%AE-5-%E3%83%AC%E3%83%99%E3%83%AB">1.6 仮想化の 5 レベル</h2>
+<h3 id="1-instruction-set-architectureisa%E3%83%AC%E3%83%99%E3%83%AB">1. Instruction Set Architecture（ISA）レベル</h3>
 <ul>
-<li>単一アプリケーションの抽象化</li>
-<li>Process-level virtualization とも呼ばれる</li>
-<li>高級言語実行環境で一般的に使用:
-<ul>
-<li>JVM (Java Virtual Machine)</li>
-<li>Python インタプリタ</li>
-<li>Node.js の V8 エンジン</li>
-<li>Go ランタイム</li>
-<li>Ruby の YARV</li>
+<li>プロセッサと命令セットの間を抽象化する仮想化</li>
+<li>異なる命令セットのエミュレーションを実現</li>
+<li>コード解釈や動的バイナリトランスレーション技術を使用</li>
 </ul>
-</li>
+<h3 id="2-hardware-abstraction-layerhal%E3%83%AC%E3%83%99%E3%83%AB">2. Hardware Abstraction Layer（HAL）レベル</h3>
+<ul>
+<li>I/O デバイスやメモリなどの物理デバイスと OS の間を抽象化</li>
+<li>クラウド環境の Virtual Machine がこのレベルに該当</li>
+<li>Hypervisor を使用して VM を作成・管理</li>
 </ul>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
@@ -2131,11 +2132,20 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<div style="display: flex; justify-content: center;">
-  <img src="https://www.hitechnectar.com/wp-content/uploads/2020/03/Five-Levels-of-Virtualization.jpg" alt="Five Levels of Virtualization" style="border-radius: 10px;" />
-</div>
+<h3 id="3-os-%E3%83%AC%E3%83%99%E3%83%AB">3. OS レベル</h3>
+<ul>
+<li>OS とアプリケーションの間を抽象化</li>
+<li>隔離された環境を軽量に作成可能</li>
+<li>Docker コンテナはこのレベルの仮想化の代表例</li>
+</ul>
+<h3 id="4-library-%E3%83%AC%E3%83%99%E3%83%AB">4. Library レベル</h3>
+<ul>
+<li>ユーザーとライブラリ間を抽象化</li>
+<li>User-level ABI や API エミュレーション</li>
+<li>WINE、vCUDA などが該当</li>
+</ul>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
@@ -2284,20 +2294,22 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="17-docker-%E3%81%AE%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8">1.7 Docker のイメージ</h2>
-<div style="display: flex; justify-content: center;">
-  <div>
-    <p style="font-size: 24px;">① Docker Hub等のリポジトリから公式のイメージを取得（pull）</p>
-    <p style="font-size: 24px;">② 取得イメージをもとにDockerFileを作成し、自作のイメージを作成（build）</p>
-    <p style="font-size: 24px;">③ イメージからコンテナを作成（create）</p>
-    <p style="font-size: 24px;">④ コンテナを起動（start）</p>
-  </div>
-  <div style="flex-shrink: 0;">
-    <img src="https://o2mamiblog.com/wp-content/uploads/2022/07/Docker-1_page-0001.jpg" alt="Dockerのイメージ" style="border-radius: 10px;width: 700px;" />
-  </div>
-</div>
+<h3 id="5-application-%E3%83%AC%E3%83%99%E3%83%AB">5. Application レベル</h3>
+<ul>
+<li>単一アプリケーションの抽象化</li>
+<li>Process-level virtualization とも呼ばれる</li>
+<li>高級言語実行環境で一般的に使用:
+<ul>
+<li>JVM (Java Virtual Machine)</li>
+<li>Python インタプリタ</li>
+<li>Node.js の V8 エンジン</li>
+<li>Go ランタイム</li>
+<li>Ruby の YARV</li>
+</ul>
+</li>
+</ul>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
@@ -2446,19 +2458,11 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h1 id="2-%E7%92%B0%E5%A2%83%E6%BA%96%E5%82%99">2. 環境準備</h1>
-<h2 id="21-docker-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">2.1 Docker のインストール</h2>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash"><span class="hljs-comment"># Macの場合（Homebrew）</span>
-brew install --cask docker
-
-<span class="hljs-comment"># Windowsの場合</span>
-<span class="hljs-comment"># Docker Desktop for Windowsをインストール</span>
-<span class="hljs-comment"># https://www.docker.com/products/docker-desktop</span>
-</code></pre>
-<p>もしくは Docker Desktop をインストール<br />
-<a href="https://www.docker.com/ja-jp/get-started/">https://www.docker.com/ja-jp/get-started/</a></p>
+<div style="display: flex; justify-content: center;">
+  <img src="https://www.hitechnectar.com/wp-content/uploads/2020/03/Five-Levels-of-Virtualization.jpg" alt="Five Levels of Virtualization" style="border-radius: 10px;" />
+</div>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
@@ -2607,21 +2611,20 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="22-%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89">2.2 基本的なコマンド</h2>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash"><span class="hljs-comment"># イメージの取得</span>
-docker pull python:3.9
-
-<span class="hljs-comment"># コンテナの作成と起動</span>
-docker run -it python:3.9
-
-<span class="hljs-comment"># コンテナの一覧表示</span>
-docker ps
-
-<span class="hljs-comment"># コンテナの停止</span>
-docker stop &lt;container_id&gt;
-</code></pre>
+<h2 id="17-docker-%E3%81%AE%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8">1.7 Docker のイメージ</h2>
+<div style="display: flex; justify-content: center;">
+  <div>
+    <p style="font-size: 24px;">① Docker Hub等のリポジトリから公式のイメージを取得（pull）</p>
+    <p style="font-size: 24px;">② 取得イメージをもとにDockerFileを作成し、自作のイメージを作成（build）</p>
+    <p style="font-size: 24px;">③ イメージからコンテナを作成（create）</p>
+    <p style="font-size: 24px;">④ コンテナを起動（start）</p>
+  </div>
+  <div style="flex-shrink: 0;">
+    <img src="https://o2mamiblog.com/wp-content/uploads/2022/07/Docker-1_page-0001.jpg" alt="Dockerのイメージ" style="border-radius: 10px;width: 700px;" />
+  </div>
+</div>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
@@ -2770,21 +2773,19 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h1 id="3-docker-%E3%81%AE%E5%AE%9F%E8%B7%B5">3. Docker の実践</h1>
-<h2 id="31-docker-%E3%81%AE%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C">3.1 Docker の基本操作</h2>
-<p>既存のイメージを Docker Hub から取得する</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash"><span class="hljs-comment"># イメージの取得</span>
-docker pull python:3.9
+<h1 id="2-%E7%92%B0%E5%A2%83%E6%BA%96%E5%82%99">2. 環境準備</h1>
+<h2 id="21-docker-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">2.1 Docker のインストール</h2>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash"><span class="hljs-comment"># Macの場合（Homebrew）</span>
+brew install --cask docker
 
-<span class="hljs-comment"># コンテナの作成と起動</span>
-docker run -it python:3.9
+<span class="hljs-comment"># Windowsの場合</span>
+<span class="hljs-comment"># Docker Desktop for Windowsをインストール</span>
+<span class="hljs-comment"># https://www.docker.com/products/docker-desktop</span>
 </code></pre>
-<p>起動したコンテナ上で python を実行する</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Hello, Docker!&quot;</span>)
-
-</code></pre>
+<p>もしくは Docker Desktop をインストール<br />
+<a href="https://www.docker.com/ja-jp/get-started/">https://www.docker.com/ja-jp/get-started/</a></p>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
@@ -2933,14 +2934,20 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<p>python のバージョンを確認する</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">import</span> sys
-<span class="hljs-built_in">print</span>(sys.version)
-</code></pre>
-<p>コンテナから抜ける</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">exit()
+<h2 id="22-%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89">2.2 基本的なコマンド</h2>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash"><span class="hljs-comment"># イメージの取得</span>
+docker pull python:3.9
+
+<span class="hljs-comment"># コンテナの作成と起動</span>
+docker run -it python:3.9
+
+<span class="hljs-comment"># コンテナの一覧表示</span>
+docker ps
+
+<span class="hljs-comment"># コンテナの停止</span>
+docker stop &lt;container_id&gt;
 </code></pre>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
@@ -3090,22 +3097,20 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<p>Dockerfile を作成してイメージを作成する</p>
-<p>以下の <code>app.py</code> を作成する</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># シンプルなPythonスクリプト</span>
-<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Hello from Docker!&quot;</span>)
-<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;This is a minimal Docker example.&quot;</span>)
+<h1 id="3-docker-%E3%81%AE%E5%AE%9F%E8%B7%B5">3. Docker の実践</h1>
+<h2 id="31-docker-%E3%81%AE%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C">3.1 Docker の基本操作</h2>
+<p>既存のイメージを Docker Hub から取得する</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash"><span class="hljs-comment"># イメージの取得</span>
+docker pull python:3.9
+
+<span class="hljs-comment"># コンテナの作成と起動</span>
+docker run -it python:3.9
 </code></pre>
-<p>同一フォルダに以下の <code>Dockerfile</code> を作成する</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-dockerfile"><span class="hljs-keyword">FROM</span> python:<span class="hljs-number">3.9</span>
+<p>起動したコンテナ上で python を実行する</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Hello, Docker!&quot;</span>)
 
-<span class="hljs-keyword">WORKDIR</span><span class="language-bash"> /app</span>
-
-<span class="hljs-keyword">COPY</span><span class="language-bash"> app.py .</span>
-
-<span class="hljs-keyword">CMD</span><span class="language-bash"> [<span class="hljs-string">&quot;python&quot;</span>, <span class="hljs-string">&quot;app.py&quot;</span>]</span>
 </code></pre>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
@@ -3255,16 +3260,14 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<p>Dockerfile をビルドする</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash">docker build -t my-python-app .
+<p>python のバージョンを確認する</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">import</span> sys
+<span class="hljs-built_in">print</span>(sys.version)
 </code></pre>
-<p>コンテナを起動する</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash">docker run -it my-python-app
-</code></pre>
-<p>コンテナを停止する</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash">docker stop my-python-app
+<p>コンテナから抜ける</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">exit()
 </code></pre>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
@@ -3414,13 +3417,23 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h1 id="4-docker-compose-%E5%85%A5%E9%96%80">4. Docker Compose 入門</h1>
-<p>Docker Compose は、複数の Docker コンテナを効率的に管理・実行するためのツールです。開発環境で複数のサービス（Web サーバーや DB など）を連携させる際に特に威力を発揮します。</p>
-<div style="display: flex; justify-content: center;">
-  <img src="https://future-architect.github.io/images/20240620a/20210117130925.jpg" alt="Docker Compose" style="border-radius: 10px; width: 700px;" />
-</div>
+<p>Dockerfile を作成してイメージを作成する</p>
+<p>以下の <code>app.py</code> を作成する</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># シンプルなPythonスクリプト</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Hello from Docker!&quot;</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;This is a minimal Docker example.&quot;</span>)
+</code></pre>
+<p>同一フォルダに以下の <code>Dockerfile</code> を作成する</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-dockerfile"><span class="hljs-keyword">FROM</span> python:<span class="hljs-number">3.9</span>
+
+<span class="hljs-keyword">WORKDIR</span><span class="language-bash"> /app</span>
+
+<span class="hljs-keyword">COPY</span><span class="language-bash"> app.py .</span>
+
+<span class="hljs-keyword">CMD</span><span class="language-bash"> [<span class="hljs-string">&quot;python&quot;</span>, <span class="hljs-string">&quot;app.py&quot;</span>]</span>
+</code></pre>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
@@ -3569,12 +3582,17 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="41-docker-compose-%E3%81%A8%E3%81%AF">4.1 Docker Compose とは</h2>
-<div style="display: flex; justify-content: center;">
-  <img src="https://www.kagoya.jp/howto/wp-content/uploads/dockercomposeimg.png.webp" alt="Docker Compose" style="border-radius: 10px; width: 700px;" />
-</div>
+<p>Dockerfile をビルドする</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash">docker build -t my-python-app .
+</code></pre>
+<p>コンテナを起動する</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash">docker run -it my-python-app
+</code></pre>
+<p>コンテナを停止する</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash">docker stop my-python-app
+</code></pre>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
@@ -3723,11 +3741,12 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="42-docker-%E3%81%A8-docker-compose-%E3%81%AE%E9%81%95%E3%81%84">4.2 Docker と Docker Compose の違い</h2>
+<h1 id="4-docker-compose-%E5%85%A5%E9%96%80">4. Docker Compose 入門</h1>
+<p>Docker Compose は、複数の Docker コンテナを効率的に管理・実行するためのツールです。開発環境で複数のサービス（Web サーバーや DB など）を連携させる際に特に威力を発揮します。</p>
 <div style="display: flex; justify-content: center;">
-  <img src="https://www.kagoya.jp/howto/wp-content/uploads/1f60e842dd5eb7b5c1eb066d36267426.png.webp" alt="Docker Compose" style="border-radius: 10px; width: 600px;" />
+  <img src="https://future-architect.github.io/images/20240620a/20210117130925.jpg" alt="Docker Compose" style="border-radius: 10px; width: 700px;" />
 </div>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
@@ -3877,32 +3896,12 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="43-docker-compose-%E3%81%AE%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88">4.3 Docker Compose のメリット</h2>
-<ol>
-<li><strong>複数コンテナの簡単な管理</strong>
-<ul>
-<li>複数のコンテナを 1 つのコマンドで起動/停止</li>
-<li>設定を一元管理できる</li>
-<li>開発環境の再現性が向上</li>
-</ul>
-</li>
-<li><strong>運用上のミス軽減</strong>
-<ul>
-<li>手作業による設定ミスを防止</li>
-<li>環境の一貫性を保証</li>
-<li>チーム間での共有が容易</li>
-</ul>
-</li>
-<li><strong>ネットワーク設定の簡素化</strong>
-<ul>
-<li>コンテナ間の通信が自動設定</li>
-<li>ホスト名による通信が可能</li>
-<li>IP アドレス変更に強い</li>
-</ul>
-</li>
-</ol>
+<h2 id="41-docker-compose-%E3%81%A8%E3%81%AF">4.1 Docker Compose とは</h2>
+<div style="display: flex; justify-content: center;">
+  <img src="https://www.kagoya.jp/howto/wp-content/uploads/dockercomposeimg.png.webp" alt="Docker Compose" style="border-radius: 10px; width: 700px;" />
+</div>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
@@ -4051,30 +4050,12 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="44-composeyaml-%E3%81%AE%E5%9F%BA%E6%9C%AC%E6%A7%8B%E9%80%A0">4.4 compose.yaml の基本構造</h2>
-<p>compose.yaml は Docker Compose の設定ファイルです。以下は基本的な構造例です：</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-yaml"><span class="hljs-attr">services:</span>
-  <span class="hljs-attr">web:</span>
-    <span class="hljs-attr">build:</span> <span class="hljs-string">.</span>
-    <span class="hljs-attr">ports:</span>
-      <span class="hljs-bullet">-</span> <span class="hljs-string">&quot;5000:5000&quot;</span>
-    <span class="hljs-attr">volumes:</span>
-      <span class="hljs-bullet">-</span> <span class="hljs-string">.:/code</span>
-    <span class="hljs-attr">environment:</span>
-      <span class="hljs-attr">FLASK_ENV:</span> <span class="hljs-string">development</span>
-    <span class="hljs-attr">depends_on:</span>
-      <span class="hljs-bullet">-</span> <span class="hljs-string">db</span>
-  <span class="hljs-attr">db:</span>
-    <span class="hljs-attr">image:</span> <span class="hljs-string">postgres</span>
-    <span class="hljs-attr">volumes:</span>
-      <span class="hljs-bullet">-</span> <span class="hljs-string">postgres_data:/var/lib/postgresql/data</span>
-    <span class="hljs-attr">environment:</span>
-      <span class="hljs-attr">POSTGRES_PASSWORD:</span> <span class="hljs-string">example</span>
-<span class="hljs-attr">volumes:</span>
-  <span class="hljs-attr">postgres_data:</span>
-</code></pre>
+<h2 id="42-docker-%E3%81%A8-docker-compose-%E3%81%AE%E9%81%95%E3%81%84">4.2 Docker と Docker Compose の違い</h2>
+<div style="display: flex; justify-content: center;">
+  <img src="https://www.kagoya.jp/howto/wp-content/uploads/1f60e842dd5eb7b5c1eb066d36267426.png.webp" alt="Docker Compose" style="border-radius: 10px; width: 600px;" />
+</div>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="26" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
@@ -4223,47 +4204,32 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h3 id="%E4%B8%BB%E8%A6%81%E3%81%AA%E8%A8%AD%E5%AE%9A%E9%A0%85%E7%9B%AE">主要な設定項目</h3>
-<table>
-<thead>
-<tr>
-<th>設定項目</th>
-<th>説明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>services</strong></td>
-<td>アプリケーションを構成するコンテナの定義</td>
-</tr>
-<tr>
-<td><strong>build</strong></td>
-<td>Dockerfile のパス</td>
-</tr>
-<tr>
-<td><strong>image</strong></td>
-<td>使用する Docker イメージ</td>
-</tr>
-<tr>
-<td><strong>ports</strong></td>
-<td>ポートマッピング</td>
-</tr>
-<tr>
-<td><strong>volumes</strong></td>
-<td>データの永続化設定</td>
-</tr>
-<tr>
-<td><strong>environment</strong></td>
-<td>環境変数の設定</td>
-</tr>
-<tr>
-<td><strong>depends_on</strong></td>
-<td>依存関係の定義</td>
-</tr>
-</tbody>
-</table>
+<h2 id="43-docker-compose-%E3%81%AE%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88">4.3 Docker Compose のメリット</h2>
+<ol>
+<li><strong>複数コンテナの簡単な管理</strong>
+<ul>
+<li>複数のコンテナを 1 つのコマンドで起動/停止</li>
+<li>設定を一元管理できる</li>
+<li>開発環境の再現性が向上</li>
+</ul>
+</li>
+<li><strong>運用上のミス軽減</strong>
+<ul>
+<li>手作業による設定ミスを防止</li>
+<li>環境の一貫性を保証</li>
+<li>チーム間での共有が容易</li>
+</ul>
+</li>
+<li><strong>ネットワーク設定の簡素化</strong>
+<ul>
+<li>コンテナ間の通信が自動設定</li>
+<li>ホスト名による通信が可能</li>
+<li>IP アドレス変更に強い</li>
+</ul>
+</li>
+</ol>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
@@ -4412,15 +4378,29 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="45-docker-compose-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">4.5 Docker Compose のインストール</h2>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash"><span class="hljs-comment"># Macの場合（Homebrew）</span>
-brew install docker-compose
-
-<span class="hljs-comment"># Windowsの場合</span>
-<span class="hljs-comment"># Docker Desktop for Windowsをインストール</span>
-<span class="hljs-comment"># https://www.docker.com/products/docker-desktop</span>
+<h2 id="44-composeyaml-%E3%81%AE%E5%9F%BA%E6%9C%AC%E6%A7%8B%E9%80%A0">4.4 compose.yaml の基本構造</h2>
+<p>compose.yaml は Docker Compose の設定ファイルです。以下は基本的な構造例です：</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-yaml"><span class="hljs-attr">services:</span>
+  <span class="hljs-attr">web:</span>
+    <span class="hljs-attr">build:</span> <span class="hljs-string">.</span>
+    <span class="hljs-attr">ports:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">&quot;5000:5000&quot;</span>
+    <span class="hljs-attr">volumes:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">.:/code</span>
+    <span class="hljs-attr">environment:</span>
+      <span class="hljs-attr">FLASK_ENV:</span> <span class="hljs-string">development</span>
+    <span class="hljs-attr">depends_on:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">db</span>
+  <span class="hljs-attr">db:</span>
+    <span class="hljs-attr">image:</span> <span class="hljs-string">postgres</span>
+    <span class="hljs-attr">volumes:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">postgres_data:/var/lib/postgresql/data</span>
+    <span class="hljs-attr">environment:</span>
+      <span class="hljs-attr">POSTGRES_PASSWORD:</span> <span class="hljs-string">example</span>
+<span class="hljs-attr">volumes:</span>
+  <span class="hljs-attr">postgres_data:</span>
 </code></pre>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
@@ -4570,24 +4550,47 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="46-docker-compose-%E3%81%AE%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89">4.6 Docker Compose の基本的なコマンド</h2>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash"><span class="hljs-comment"># コンテナの起動（バックグラウンド実行）</span>
-docker compose up -d
-
-<span class="hljs-comment"># コンテナの停止と削除</span>
-docker compose down
-
-<span class="hljs-comment"># コンテナの再起動</span>
-docker compose restart
-
-<span class="hljs-comment"># ログの確認</span>
-docker compose logs
-
-<span class="hljs-comment"># サービスの状態確認</span>
-docker compose ps
-</code></pre>
+<h3 id="%E4%B8%BB%E8%A6%81%E3%81%AA%E8%A8%AD%E5%AE%9A%E9%A0%85%E7%9B%AE">主要な設定項目</h3>
+<table>
+<thead>
+<tr>
+<th>設定項目</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>services</strong></td>
+<td>アプリケーションを構成するコンテナの定義</td>
+</tr>
+<tr>
+<td><strong>build</strong></td>
+<td>Dockerfile のパス</td>
+</tr>
+<tr>
+<td><strong>image</strong></td>
+<td>使用する Docker イメージ</td>
+</tr>
+<tr>
+<td><strong>ports</strong></td>
+<td>ポートマッピング</td>
+</tr>
+<tr>
+<td><strong>volumes</strong></td>
+<td>データの永続化設定</td>
+</tr>
+<tr>
+<td><strong>environment</strong></td>
+<td>環境変数の設定</td>
+</tr>
+<tr>
+<td><strong>depends_on</strong></td>
+<td>依存関係の定義</td>
+</tr>
+</tbody>
+</table>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="29" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
@@ -4736,22 +4739,15 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="47-%E5%AE%9F%E8%B7%B5%E4%BE%8Bgo-%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E7%92%B0%E5%A2%83%E3%81%AE%E6%A7%8B%E7%AF%89">4.7 実践例：Go アプリケーション環境の構築</h2>
-<p>以下は、Go のシンプルな API サーバーを構築する例です：</p>
-<p><code>main.go</code>の内容：</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-go"><span class="hljs-keyword">package</span> main
+<h2 id="45-docker-compose-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">4.5 Docker Compose のインストール</h2>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash"><span class="hljs-comment"># Macの場合（Homebrew）</span>
+brew install docker-compose
 
-<span class="hljs-keyword">import</span> (
-    <span class="hljs-string">&quot;encoding/json&quot;</span>
-    <span class="hljs-string">&quot;log&quot;</span>
-    <span class="hljs-string">&quot;net/http&quot;</span>
-)
-
-<span class="hljs-keyword">type</span> Response <span class="hljs-keyword">struct</span> {
-    Message <span class="hljs-type">string</span> <span class="hljs-string">`json:&quot;message&quot;`</span>
-}
+<span class="hljs-comment"># Windowsの場合</span>
+<span class="hljs-comment"># Docker Desktop for Windowsをインストール</span>
+<span class="hljs-comment"># https://www.docker.com/products/docker-desktop</span>
 </code></pre>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
@@ -4901,20 +4897,23 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
-    http.HandleFunc(<span class="hljs-string">&quot;/&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(w http.ResponseWriter, r *http.Request)</span></span> {
-        response := Response{Message: <span class="hljs-string">&quot;Hello, World!&quot;</span>}
-        w.Header().Set(<span class="hljs-string">&quot;Content-Type&quot;</span>, <span class="hljs-string">&quot;application/json&quot;</span>)
-        json.NewEncoder(w).Encode(response)
-    })
+<h2 id="46-docker-compose-%E3%81%AE%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89">4.6 Docker Compose の基本的なコマンド</h2>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash"><span class="hljs-comment"># コンテナの起動（バックグラウンド実行）</span>
+docker compose up -d
 
-    log.Println(<span class="hljs-string">&quot;Server starting on port 8080...&quot;</span>)
-    <span class="hljs-keyword">if</span> err := http.ListenAndServe(<span class="hljs-string">&quot;:8080&quot;</span>, <span class="hljs-literal">nil</span>); err != <span class="hljs-literal">nil</span> {
-        log.Fatal(err)
-    }
-}
+<span class="hljs-comment"># コンテナの停止と削除</span>
+docker compose down
+
+<span class="hljs-comment"># コンテナの再起動</span>
+docker compose restart
+
+<span class="hljs-comment"># ログの確認</span>
+docker compose logs
+
+<span class="hljs-comment"># サービスの状態確認</span>
+docker compose ps
 </code></pre>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
@@ -5064,21 +5063,22 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<p><code>compose.yaml</code>の設定：</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-yaml"><span class="hljs-attr">services:</span>
-  <span class="hljs-attr">api:</span>
-    <span class="hljs-attr">build:</span> <span class="hljs-string">.</span>
-    <span class="hljs-attr">ports:</span>
-      <span class="hljs-bullet">-</span> <span class="hljs-string">&quot;8080:8080&quot;</span>
-    <span class="hljs-attr">volumes:</span>
-      <span class="hljs-bullet">-</span> <span class="hljs-string">.:/app</span>
-    <span class="hljs-attr">environment:</span>
-      <span class="hljs-bullet">-</span> <span class="hljs-string">GO_ENV=development</span>
+<h2 id="47-%E5%AE%9F%E8%B7%B5%E4%BE%8Bgo-%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E7%92%B0%E5%A2%83%E3%81%AE%E6%A7%8B%E7%AF%89">4.7 実践例：Go アプリケーション環境の構築</h2>
+<p>以下は、Go のシンプルな API サーバーを構築する例です：</p>
+<p><code>main.go</code>の内容：</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-go"><span class="hljs-keyword">package</span> main
 
-<span class="hljs-attr">volumes:</span>
-  <span class="hljs-attr">go_modules:</span>
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;encoding/json&quot;</span>
+    <span class="hljs-string">&quot;log&quot;</span>
+    <span class="hljs-string">&quot;net/http&quot;</span>
+)
+
+<span class="hljs-keyword">type</span> Response <span class="hljs-keyword">struct</span> {
+    Message <span class="hljs-type">string</span> <span class="hljs-string">`json:&quot;message&quot;`</span>
+}
 </code></pre>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
@@ -5228,18 +5228,20 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<p>対応する<code>Dockerfile</code>：</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-dockerfile"><span class="hljs-keyword">FROM</span> golang:<span class="hljs-number">1.21</span>-alpine
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
+    http.HandleFunc(<span class="hljs-string">&quot;/&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(w http.ResponseWriter, r *http.Request)</span></span> {
+        response := Response{Message: <span class="hljs-string">&quot;Hello, World!&quot;</span>}
+        w.Header().Set(<span class="hljs-string">&quot;Content-Type&quot;</span>, <span class="hljs-string">&quot;application/json&quot;</span>)
+        json.NewEncoder(w).Encode(response)
+    })
 
-<span class="hljs-keyword">WORKDIR</span><span class="language-bash"> /app</span>
-
-<span class="hljs-comment"># アプリケーションのソースコードをコピー</span>
-<span class="hljs-keyword">COPY</span><span class="language-bash"> . .</span>
-
-<span class="hljs-comment"># アプリケーションをビルドして実行</span>
-<span class="hljs-keyword">CMD</span><span class="language-bash"> [<span class="hljs-string">&quot;go&quot;</span>, <span class="hljs-string">&quot;run&quot;</span>, <span class="hljs-string">&quot;main.go&quot;</span>]</span>
+    log.Println(<span class="hljs-string">&quot;Server starting on port 8080...&quot;</span>)
+    <span class="hljs-keyword">if</span> err := http.ListenAndServe(<span class="hljs-string">&quot;:8080&quot;</span>, <span class="hljs-literal">nil</span>); err != <span class="hljs-literal">nil</span> {
+        log.Fatal(err)
+    }
+}
 </code></pre>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
@@ -5389,16 +5391,21 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<p>フォルダの作成と移動:</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash"><span class="hljs-built_in">mkdir</span> go-app
-<span class="hljs-built_in">cd</span> go-app
-</code></pre>
-<p>作成したフォルダに<code>main.go</code> <code>Dockerfile</code> <code>compose.yaml</code>を作成する</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash"><span class="hljs-built_in">touch</span> main.go
-<span class="hljs-built_in">touch</span> Dockerfile
-<span class="hljs-built_in">touch</span> compose.yaml
+<p><code>compose.yaml</code>の設定：</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-yaml"><span class="hljs-attr">services:</span>
+  <span class="hljs-attr">api:</span>
+    <span class="hljs-attr">build:</span> <span class="hljs-string">.</span>
+    <span class="hljs-attr">ports:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">&quot;8080:8080&quot;</span>
+    <span class="hljs-attr">volumes:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">.:/app</span>
+    <span class="hljs-attr">environment:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">GO_ENV=development</span>
+
+<span class="hljs-attr">volumes:</span>
+  <span class="hljs-attr">go_modules:</span>
 </code></pre>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
@@ -5548,14 +5555,18 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<p>アプリケーションの起動：</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash">docker compose up --build
-</code></pre>
-<p>API の動作確認：</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash">curl http://localhost:8080
-<span class="hljs-comment"># 応答: {&quot;message&quot;:&quot;Hello, World!&quot;}</span>
+<p>対応する<code>Dockerfile</code>：</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-dockerfile"><span class="hljs-keyword">FROM</span> golang:<span class="hljs-number">1.21</span>-alpine
+
+<span class="hljs-keyword">WORKDIR</span><span class="language-bash"> /app</span>
+
+<span class="hljs-comment"># アプリケーションのソースコードをコピー</span>
+<span class="hljs-keyword">COPY</span><span class="language-bash"> . .</span>
+
+<span class="hljs-comment"># アプリケーションをビルドして実行</span>
+<span class="hljs-keyword">CMD</span><span class="language-bash"> [<span class="hljs-string">&quot;go&quot;</span>, <span class="hljs-string">&quot;run&quot;</span>, <span class="hljs-string">&quot;main.go&quot;</span>]</span>
 </code></pre>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
@@ -5705,14 +5716,17 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h1 id="5-dev-container-%E5%85%A5%E9%96%80">5. Dev Container 入門</h1>
-<h2 id="51-devcontainer-%E3%81%A8%E3%81%AF">5.1 devcontainer とは</h2>
-<div style="display: flex; justify-content: center;">
-  <img src="https://code.visualstudio.com/assets/docs/devcontainers/containers/architecture-containers.png" alt="Dev Container Architecture" style="border-radius: 10px; width: 700px;" />
-</div>
-<p>Visual Studio Code Dev Containers は、コンテナを完全な機能を備えた開発環境として使用できるようにする拡張機能です。</p>
+<p>フォルダの作成と移動:</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash"><span class="hljs-built_in">mkdir</span> go-app
+<span class="hljs-built_in">cd</span> go-app
+</code></pre>
+<p>作成したフォルダに<code>main.go</code> <code>Dockerfile</code> <code>compose.yaml</code>を作成する</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash"><span class="hljs-built_in">touch</span> main.go
+<span class="hljs-built_in">touch</span> Dockerfile
+<span class="hljs-built_in">touch</span> compose.yaml
+</code></pre>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="36" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
@@ -5861,29 +5875,15 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="52-devcontainer-%E3%81%AE%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88">5.2 devcontainer のメリット</h2>
-<div style="display: flex; justify-content: space-between;">
-  <div style="width: 45%;">
-    <h3>開発者にとって</h3>
-    <ul>
-      <li>環境構築の簡素化</li>
-      <li>チーム間での環境の統一</li>
-      <li>プロジェクト切り替えの容易さ</li>
-      <li>ローカル環境の汚染防止</li>
-    </ul>
-  </div>
-  <div style="width: 45%;">
-    <h3>チームにとって</h3>
-    <ul>
-      <li>新メンバーの参加がスムーズ</li>
-      <li>環境の標準化</li>
-      <li>トラブルシューティングの効率化</li>
-      <li>CI/CDとの親和性</li>
-    </ul>
-  </div>
-</div>
+<p>アプリケーションの起動：</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash">docker compose up --build
+</code></pre>
+<p>API の動作確認：</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash">curl http://localhost:8080
+<span class="hljs-comment"># 応答: {&quot;message&quot;:&quot;Hello, World!&quot;}</span>
+</code></pre>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="37" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
@@ -6032,38 +6032,14 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="53-%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E8%A6%81%E4%BB%B6">5.3 システム要件</h2>
-<h3 id="%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%9B%E3%82%B9%E3%83%88%E8%A6%81%E4%BB%B6">ローカル/リモートホスト要件</h3>
-<div style="font-size: 20px;">
-<table>
-<thead>
-<tr>
-<th>OS</th>
-<th>要件</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Windows</td>
-<td>Docker Desktop 2.0+ (Windows 10 Pro/Enterprise)<br />Windows 10 Home (2004+)は Docker Desktop 2.3+と WSL 2 バックエンドが必要</td>
-</tr>
-<tr>
-<td>macOS</td>
-<td>Docker Desktop 2.0+</td>
-</tr>
-<tr>
-<td>Linux</td>
-<td>Docker CE/EE 18.06+と Docker Compose 1.21+</td>
-</tr>
-<tr>
-<td>リモートホスト</td>
-<td>最小 1GB RAM（推奨：2GB RAM、2 コア CPU）</td>
-</tr>
-</tbody>
-</table>
+<h1 id="5-dev-container-%E5%85%A5%E9%96%80">5. Dev Container 入門</h1>
+<h2 id="51-devcontainer-%E3%81%A8%E3%81%AF">5.1 devcontainer とは</h2>
+<div style="display: flex; justify-content: center;">
+  <img src="https://code.visualstudio.com/assets/docs/devcontainers/containers/architecture-containers.png" alt="Dev Container Architecture" style="border-radius: 10px; width: 700px;" />
 </div>
+<p>Visual Studio Code Dev Containers は、コンテナを完全な機能を備えた開発環境として使用できるようにする拡張機能です。</p>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="38" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
@@ -6212,26 +6188,29 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="54-%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%89%8B%E9%A0%86">5.4 インストール手順</h2>
-<ol>
-<li>
-<p><strong>VS Code のインストール</strong></p>
-<ul>
-<li><a href="https://code.visualstudio.com/">VS Code 公式サイト</a>からダウンロード</li>
-</ul>
-</li>
-<li>
-<p><strong>Dev Containers 拡張機能のインストール</strong></p>
-<ul>
-<li>VS Code の拡張機能マーケットプレイスから「Dev Containers」を検索</li>
-<li>もしくはコマンドラインから:</li>
-</ul>
-</li>
-</ol>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash">code --install-extension ms-vscode-remote.remote-containers
-</code></pre>
+<h2 id="52-devcontainer-%E3%81%AE%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88">5.2 devcontainer のメリット</h2>
+<div style="display: flex; justify-content: space-between;">
+  <div style="width: 45%;">
+    <h3>開発者にとって</h3>
+    <ul>
+      <li>環境構築の簡素化</li>
+      <li>チーム間での環境の統一</li>
+      <li>プロジェクト切り替えの容易さ</li>
+      <li>ローカル環境の汚染防止</li>
+    </ul>
+  </div>
+  <div style="width: 45%;">
+    <h3>チームにとって</h3>
+    <ul>
+      <li>新メンバーの参加がスムーズ</li>
+      <li>環境の標準化</li>
+      <li>トラブルシューティングの効率化</li>
+      <li>CI/CDとの親和性</li>
+    </ul>
+  </div>
+</div>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="39" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
@@ -6380,11 +6359,37 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h3 id="dev-container-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">Dev Container のインストール</h3>
-<div style="display: flex; justify-content: center;">
-  <img src="https://blog.kinto-technologies.com/assets/blog/authors/torii/2022-12-10-dev-container/devcontainer-01.webp" alt="Dev Container Architecture" style="border-radius: 10px; width: 700px;" />
+<h2 id="53-%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E8%A6%81%E4%BB%B6">5.3 システム要件</h2>
+<h3 id="%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%9B%E3%82%B9%E3%83%88%E8%A6%81%E4%BB%B6">ローカル/リモートホスト要件</h3>
+<div style="font-size: 20px;">
+<table>
+<thead>
+<tr>
+<th>OS</th>
+<th>要件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td>Docker Desktop 2.0+ (Windows 10 Pro/Enterprise)<br />Windows 10 Home (2004+)は Docker Desktop 2.3+と WSL 2 バックエンドが必要</td>
+</tr>
+<tr>
+<td>macOS</td>
+<td>Docker Desktop 2.0+</td>
+</tr>
+<tr>
+<td>Linux</td>
+<td>Docker CE/EE 18.06+と Docker Compose 1.21+</td>
+</tr>
+<tr>
+<td>リモートホスト</td>
+<td>最小 1GB RAM（推奨：2GB RAM、2 コア CPU）</td>
+</tr>
+</tbody>
+</table>
 </div>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
@@ -6534,21 +6539,25 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="55-%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E4%BD%BF%E3%81%84%E6%96%B9">5.5 基本的な使い方</h2>
-<h3 id="devcontainerjson-%E3%81%AE%E4%BD%9C%E6%88%90">devcontainer.json の作成</h3>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-json"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Node.js &amp; TypeScript&quot;</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">&quot;image&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye&quot;</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">&quot;forwardPorts&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-number">3000</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">&quot;customizations&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-    <span class="hljs-attr">&quot;vscode&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-      <span class="hljs-attr">&quot;extensions&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;dbaeumer.vscode-eslint&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-string">&quot;esbenp.prettier-vscode&quot;</span><span class="hljs-punctuation">]</span>
-    <span class="hljs-punctuation">}</span>
-  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">&quot;postCreateCommand&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;npm install&quot;</span>
-<span class="hljs-punctuation">}</span>
+<h2 id="54-%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%89%8B%E9%A0%86">5.4 インストール手順</h2>
+<ol>
+<li>
+<p><strong>VS Code のインストール</strong></p>
+<ul>
+<li><a href="https://code.visualstudio.com/">VS Code 公式サイト</a>からダウンロード</li>
+</ul>
+</li>
+<li>
+<p><strong>Dev Containers 拡張機能のインストール</strong></p>
+<ul>
+<li>VS Code の拡張機能マーケットプレイスから「Dev Containers」を検索</li>
+<li>もしくはコマンドラインから:</li>
+</ul>
+</li>
+</ol>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash">code --install-extension ms-vscode-remote.remote-containers
 </code></pre>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
@@ -6698,61 +6707,11 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h3 id="devcontainerjson-%E3%81%AE%E4%B8%BB%E8%A6%81%E3%81%AA%E8%A8%AD%E5%AE%9A%E9%A0%85%E7%9B%AE">devcontainer.json の主要な設定項目</h3>
-<div style="font-size: 20px;">
-<table>
-<thead>
-<tr>
-<th>設定項目</th>
-<th>説明</th>
-<th>例</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>name</td>
-<td>コンテナの名前</td>
-<td><code>&quot;name&quot;: &quot;Python 3&quot;</code></td>
-</tr>
-<tr>
-<td>image</td>
-<td>使用する Docker イメージ</td>
-<td><code>&quot;image&quot;: &quot;mcr.microsoft.com/devcontainers/python:3&quot;</code></td>
-</tr>
-<tr>
-<td>build</td>
-<td>Dockerfile からのビルド設定</td>
-<td><code>&quot;build&quot;: { &quot;dockerfile&quot;: &quot;Dockerfile&quot; }</code></td>
-</tr>
-<tr>
-<td>forwardPorts</td>
-<td>転送するポート</td>
-<td><code>&quot;forwardPorts&quot;: [3000, 5000]</code></td>
-</tr>
-<tr>
-<td>customizations</td>
-<td>VS Code 固有の設定</td>
-<td><code>&quot;customizations&quot;: { &quot;vscode&quot;: { ... } }</code></td>
-</tr>
-<tr>
-<td>extensions</td>
-<td>インストールする拡張機能</td>
-<td><code>&quot;extensions&quot;: [&quot;ms-python.python&quot;]</code></td>
-</tr>
-<tr>
-<td>settings</td>
-<td>VS Code 設定</td>
-<td><code>&quot;settings&quot;: { &quot;python.linting.enabled&quot;: true }</code></td>
-</tr>
-<tr>
-<td>postCreateCommand</td>
-<td>コンテナ作成後のコマンド</td>
-<td><code>&quot;postCreateCommand&quot;: &quot;npm install&quot;</code></td>
-</tr>
-</tbody>
-</table>
+<h3 id="dev-container-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">Dev Container のインストール</h3>
+<div style="display: flex; justify-content: center;">
+  <img src="https://blog.kinto-technologies.com/assets/blog/authors/torii/2022-12-10-dev-container/devcontainer-01.webp" alt="Dev Container Architecture" style="border-radius: 10px; width: 700px;" />
 </div>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
@@ -6902,18 +6861,20 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="56-dev-container-features">5.6 Dev Container Features</h2>
-<p>Features は、開発コンテナに追加のツールやランタイムを簡単に追加できる機能です。</p>
+<h2 id="55-%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E4%BD%BF%E3%81%84%E6%96%B9">5.5 基本的な使い方</h2>
+<h3 id="devcontainerjson-%E3%81%AE%E4%BD%9C%E6%88%90">devcontainer.json の作成</h3>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-json"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">&quot;features&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-    <span class="hljs-attr">&quot;ghcr.io/devcontainers/features/github-cli:1&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">&quot;ghcr.io/devcontainers/features/docker-in-docker:2&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">&quot;ghcr.io/devcontainers/features/python:1&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-      <span class="hljs-attr">&quot;version&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;3.11&quot;</span>
+  <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Node.js &amp; TypeScript&quot;</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">&quot;image&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye&quot;</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">&quot;forwardPorts&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-number">3000</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">&quot;customizations&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+    <span class="hljs-attr">&quot;vscode&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+      <span class="hljs-attr">&quot;extensions&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;dbaeumer.vscode-eslint&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-string">&quot;esbenp.prettier-vscode&quot;</span><span class="hljs-punctuation">]</span>
     <span class="hljs-punctuation">}</span>
-  <span class="hljs-punctuation">}</span>
+  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">&quot;postCreateCommand&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;npm install&quot;</span>
 <span class="hljs-punctuation">}</span>
 </code></pre>
 <footer>©2025 Satoshi Yoshimura</footer>
@@ -7064,18 +7025,62 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="57-%E5%AE%9F%E8%B7%B5%E7%9A%84%E3%81%AA%E4%BE%8Bpython-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88">5.7 実践的な例：Python プロジェクト</h2>
-<h3 id="%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E6%A7%8B%E9%80%A0">プロジェクト構造</h3>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code>myproject/
-├── .devcontainer/
-│   ├── devcontainer.json
-│   └── Dockerfile
-├── src/
-│   └── main.py
-└── requirements.txt
-</code></pre>
+<h3 id="devcontainerjson-%E3%81%AE%E4%B8%BB%E8%A6%81%E3%81%AA%E8%A8%AD%E5%AE%9A%E9%A0%85%E7%9B%AE">devcontainer.json の主要な設定項目</h3>
+<div style="font-size: 20px;">
+<table>
+<thead>
+<tr>
+<th>設定項目</th>
+<th>説明</th>
+<th>例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>コンテナの名前</td>
+<td><code>&quot;name&quot;: &quot;Python 3&quot;</code></td>
+</tr>
+<tr>
+<td>image</td>
+<td>使用する Docker イメージ</td>
+<td><code>&quot;image&quot;: &quot;mcr.microsoft.com/devcontainers/python:3&quot;</code></td>
+</tr>
+<tr>
+<td>build</td>
+<td>Dockerfile からのビルド設定</td>
+<td><code>&quot;build&quot;: { &quot;dockerfile&quot;: &quot;Dockerfile&quot; }</code></td>
+</tr>
+<tr>
+<td>forwardPorts</td>
+<td>転送するポート</td>
+<td><code>&quot;forwardPorts&quot;: [3000, 5000]</code></td>
+</tr>
+<tr>
+<td>customizations</td>
+<td>VS Code 固有の設定</td>
+<td><code>&quot;customizations&quot;: { &quot;vscode&quot;: { ... } }</code></td>
+</tr>
+<tr>
+<td>extensions</td>
+<td>インストールする拡張機能</td>
+<td><code>&quot;extensions&quot;: [&quot;ms-python.python&quot;]</code></td>
+</tr>
+<tr>
+<td>settings</td>
+<td>VS Code 設定</td>
+<td><code>&quot;settings&quot;: { &quot;python.linting.enabled&quot;: true }</code></td>
+</tr>
+<tr>
+<td>postCreateCommand</td>
+<td>コンテナ作成後のコマンド</td>
+<td><code>&quot;postCreateCommand&quot;: &quot;npm install&quot;</code></td>
+</tr>
+</tbody>
+</table>
+</div>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="44" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
@@ -7224,17 +7229,20 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h3 id="vs-code-%E3%81%A7-dev-container-%E3%82%92%E9%96%8B%E3%81%8F">VS Code で Dev Container を開く</h3>
-<div style="text-align: center;">
-<p>VS Code 左下のメニューから「Dev Container」を選択する</p>
-  <img src="https://industrial-inference.com/wp-content/uploads/2023/08/image.png" style="border-radius: 10px; width: 300px; margin: 10px auto;" />
-</div>
-<div style="text-align: center;">
-<p>New Dev Container を選択する<p>
-  <img src="https://chigusa-web.com/wp-content/uploads/2023/04/2023-04-01_17h48_49.png" alt="Dev Container Architecture" style="border-radius: 10px; width: 700px;" />
-</div>
+<h2 id="56-dev-container-features">5.6 Dev Container Features</h2>
+<p>Features は、開発コンテナに追加のツールやランタイムを簡単に追加できる機能です。</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-json"><span class="hljs-punctuation">{</span>
+  <span class="hljs-attr">&quot;features&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+    <span class="hljs-attr">&quot;ghcr.io/devcontainers/features/github-cli:1&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">&quot;ghcr.io/devcontainers/features/docker-in-docker:2&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">&quot;ghcr.io/devcontainers/features/python:1&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+      <span class="hljs-attr">&quot;version&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;3.11&quot;</span>
+    <span class="hljs-punctuation">}</span>
+  <span class="hljs-punctuation">}</span>
+<span class="hljs-punctuation">}</span>
+</code></pre>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="45" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
@@ -7383,18 +7391,17 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h3 id="dockerfile">Dockerfile</h3>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-dockerfile"><span class="hljs-keyword">FROM</span> mcr.microsoft.com/devcontainers/python:<span class="hljs-number">3.11</span>
-
-<span class="hljs-keyword">WORKDIR</span><span class="language-bash"> /workspace</span>
-
-<span class="hljs-keyword">COPY</span><span class="language-bash"> requirements.txt /tmp/pip-tmp/</span>
-<span class="hljs-keyword">RUN</span><span class="language-bash"> pip3 --disable-pip-version-check --no-cache-dir install -r /tmp/pip-tmp/requirements.txt \
-    &amp;&amp; <span class="hljs-built_in">rm</span> -rf /tmp/pip-tmp</span>
-
-<span class="hljs-keyword">USER</span> vscode
+<h2 id="57-%E5%AE%9F%E8%B7%B5%E7%9A%84%E3%81%AA%E4%BE%8Bpython-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88">5.7 実践的な例：Python プロジェクト</h2>
+<h3 id="%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E6%A7%8B%E9%80%A0">プロジェクト構造</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code>myproject/
+├── .devcontainer/
+│   ├── devcontainer.json
+│   └── Dockerfile
+├── src/
+│   └── main.py
+└── requirements.txt
 </code></pre>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
@@ -7544,34 +7551,17 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h3 id="devcontainerjson">devcontainer.json</h3>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-json"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Python Project&quot;</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">&quot;build&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-    <span class="hljs-attr">&quot;dockerfile&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Dockerfile&quot;</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">&quot;context&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;..&quot;</span>
-  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">&quot;customizations&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-    <span class="hljs-attr">&quot;vscode&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-      <span class="hljs-attr">&quot;extensions&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
-        <span class="hljs-string">&quot;ms-python.python&quot;</span><span class="hljs-punctuation">,</span>
-        <span class="hljs-string">&quot;ms-python.vscode-pylance&quot;</span><span class="hljs-punctuation">,</span>
-        <span class="hljs-string">&quot;ms-python.black-formatter&quot;</span>
-      <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">&quot;settings&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-        <span class="hljs-attr">&quot;python.defaultInterpreterPath&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;/usr/local/bin/python&quot;</span><span class="hljs-punctuation">,</span>
-        <span class="hljs-attr">&quot;python.linting.enabled&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
-        <span class="hljs-attr">&quot;python.formatting.provider&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;black&quot;</span>
-      <span class="hljs-punctuation">}</span>
-    <span class="hljs-punctuation">}</span>
-  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">&quot;forwardPorts&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-number">8000</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">&quot;postCreateCommand&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;pip install --user -r requirements.txt&quot;</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">&quot;remoteUser&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;vscode&quot;</span>
-<span class="hljs-punctuation">}</span>
-</code></pre>
+<h3 id="vs-code-%E3%81%A7-dev-container-%E3%82%92%E9%96%8B%E3%81%8F">VS Code で Dev Container を開く</h3>
+<div style="text-align: center;">
+<p>VS Code 左下のメニューから「Dev Container」を選択する</p>
+  <img src="https://industrial-inference.com/wp-content/uploads/2023/08/image.png" style="border-radius: 10px; width: 300px; margin: 10px auto;" />
+</div>
+<div style="text-align: center;">
+<p>New Dev Container を選択する<p>
+  <img src="https://chigusa-web.com/wp-content/uploads/2023/04/2023-04-01_17h48_49.png" alt="Dev Container Architecture" style="border-radius: 10px; width: 700px;" />
+</div>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="47" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
@@ -7720,24 +7710,18 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="58-%E9%AB%98%E5%BA%A6%E3%81%AA%E8%A8%AD%E5%AE%9A">5.8 高度な設定</h2>
-<h3 id="%E3%83%9C%E3%83%AA%E3%83%A5%E3%83%BC%E3%83%A0%E3%83%9E%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E6%9C%80%E9%81%A9%E5%8C%96">ボリュームマウントの最適化</h3>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-json"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">&quot;mounts&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
-    <span class="hljs-string">&quot;source=${localWorkspaceFolder}/data,target=/workspace/data,type=bind,consistency=cached&quot;</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-string">&quot;source=node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume&quot;</span>
-  <span class="hljs-punctuation">]</span>
-<span class="hljs-punctuation">}</span>
-</code></pre>
-<h3 id="%E7%92%B0%E5%A2%83%E5%A4%89%E6%95%B0%E3%81%AE%E8%A8%AD%E5%AE%9A">環境変数の設定</h3>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-json"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">&quot;remoteEnv&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-    <span class="hljs-attr">&quot;DATABASE_URL&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;postgresql://user:pass@localhost:5432/db&quot;</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">&quot;NODE_ENV&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;development&quot;</span>
-  <span class="hljs-punctuation">}</span>
-<span class="hljs-punctuation">}</span>
+<h3 id="dockerfile">Dockerfile</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-dockerfile"><span class="hljs-keyword">FROM</span> mcr.microsoft.com/devcontainers/python:<span class="hljs-number">3.11</span>
+
+<span class="hljs-keyword">WORKDIR</span><span class="language-bash"> /workspace</span>
+
+<span class="hljs-keyword">COPY</span><span class="language-bash"> requirements.txt /tmp/pip-tmp/</span>
+<span class="hljs-keyword">RUN</span><span class="language-bash"> pip3 --disable-pip-version-check --no-cache-dir install -r /tmp/pip-tmp/requirements.txt \
+    &amp;&amp; <span class="hljs-built_in">rm</span> -rf /tmp/pip-tmp</span>
+
+<span class="hljs-keyword">USER</span> vscode
 </code></pre>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
@@ -7887,21 +7871,32 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="59-%E3%83%87%E3%83%90%E3%83%83%E3%82%B0%E8%A8%AD%E5%AE%9A">5.9 デバッグ設定</h2>
-<h3 id="launchjson-%E3%81%AE%E4%BE%8Bpython">launch.json の例（Python）</h3>
+<h3 id="devcontainerjson">devcontainer.json</h3>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-json"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">&quot;version&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;0.2.0&quot;</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">&quot;configurations&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
-    <span class="hljs-punctuation">{</span>
-      <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Python: Current File&quot;</span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">&quot;type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;python&quot;</span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">&quot;request&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;launch&quot;</span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">&quot;program&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;${file}&quot;</span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">&quot;console&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;integratedTerminal&quot;</span>
+  <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Python Project&quot;</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">&quot;build&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+    <span class="hljs-attr">&quot;dockerfile&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Dockerfile&quot;</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">&quot;context&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;..&quot;</span>
+  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">&quot;customizations&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+    <span class="hljs-attr">&quot;vscode&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+      <span class="hljs-attr">&quot;extensions&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+        <span class="hljs-string">&quot;ms-python.python&quot;</span><span class="hljs-punctuation">,</span>
+        <span class="hljs-string">&quot;ms-python.vscode-pylance&quot;</span><span class="hljs-punctuation">,</span>
+        <span class="hljs-string">&quot;ms-python.black-formatter&quot;</span>
+      <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;settings&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+        <span class="hljs-attr">&quot;python.defaultInterpreterPath&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;/usr/local/bin/python&quot;</span><span class="hljs-punctuation">,</span>
+        <span class="hljs-attr">&quot;python.linting.enabled&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
+        <span class="hljs-attr">&quot;python.formatting.provider&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;black&quot;</span>
+      <span class="hljs-punctuation">}</span>
     <span class="hljs-punctuation">}</span>
-  <span class="hljs-punctuation">]</span>
+  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">&quot;forwardPorts&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-number">8000</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">&quot;postCreateCommand&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;pip install --user -r requirements.txt&quot;</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">&quot;remoteUser&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;vscode&quot;</span>
 <span class="hljs-punctuation">}</span>
 </code></pre>
 <footer>©2025 Satoshi Yoshimura</footer>
@@ -8052,33 +8047,25 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h2 id="510-%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0">5.10 トラブルシューティング</h2>
-<div style="font-size: 20px;">
-<table>
-<thead>
-<tr>
-<th>問題</th>
-<th>解決策</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>コンテナが起動しない</td>
-<td>- Docker サービスの状態確認<br />- リソース制限の確認<br />- ログの確認</td>
-</tr>
-<tr>
-<td>パフォーマンスが悪い</td>
-<td>- ボリュームマウントの最適化<br />- WSL2 の使用（Windows）<br />- リソース割り当ての調整</td>
-</tr>
-<tr>
-<td>拡張機能が動作しない</td>
-<td>- 拡張機能の再インストール<br />- VS Code の再起動<br />- 互換性の確認</td>
-</tr>
-</tbody>
-</table>
-</div>
+<h2 id="58-%E9%AB%98%E5%BA%A6%E3%81%AA%E8%A8%AD%E5%AE%9A">5.8 高度な設定</h2>
+<h3 id="%E3%83%9C%E3%83%AA%E3%83%A5%E3%83%BC%E3%83%A0%E3%83%9E%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E6%9C%80%E9%81%A9%E5%8C%96">ボリュームマウントの最適化</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-json"><span class="hljs-punctuation">{</span>
+  <span class="hljs-attr">&quot;mounts&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+    <span class="hljs-string">&quot;source=${localWorkspaceFolder}/data,target=/workspace/data,type=bind,consistency=cached&quot;</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-string">&quot;source=node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume&quot;</span>
+  <span class="hljs-punctuation">]</span>
+<span class="hljs-punctuation">}</span>
+</code></pre>
+<h3 id="%E7%92%B0%E5%A2%83%E5%A4%89%E6%95%B0%E3%81%AE%E8%A8%AD%E5%AE%9A">環境変数の設定</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-json"><span class="hljs-punctuation">{</span>
+  <span class="hljs-attr">&quot;remoteEnv&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+    <span class="hljs-attr">&quot;DATABASE_URL&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;postgresql://user:pass@localhost:5432/db&quot;</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">&quot;NODE_ENV&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;development&quot;</span>
+  <span class="hljs-punctuation">}</span>
+<span class="hljs-punctuation">}</span>
+</code></pre>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="50" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
@@ -8227,18 +8214,23 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
-<h1 id="%E3%81%BE%E3%81%A8%E3%82%81">まとめ</h1>
-<ul>
-<li>Docker は、開発環境の標準化と共有を実現し、プロジェクトの一貫性を保つための強力なツール。</li>
-<li>コンテナ技術により、チーム開発の効率が大幅に向上し、メンバー間の環境差を解消する。</li>
-<li>Docker Compose を使用することで、複数のサービスを簡単に管理・実行でき、開発環境の<br />
-再現性が向上する。</li>
-<li>VS Code との深い統合により、開発者は直感的に作業でき、迅速なフィードバックを得られる。</li>
-<li>適切な設定と運用により、開発ワークフローを最適化し、トラブルシューティングの時間を短縮する。</li>
-<li>Dev Container を利用することで、開発環境の構築が簡素化され、新メンバーの参加がスムーズに。</li>
-</ul>
+<h2 id="59-%E3%83%87%E3%83%90%E3%83%83%E3%82%B0%E8%A8%AD%E5%AE%9A">5.9 デバッグ設定</h2>
+<h3 id="launchjson-%E3%81%AE%E4%BE%8Bpython">launch.json の例（Python）</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-json"><span class="hljs-punctuation">{</span>
+  <span class="hljs-attr">&quot;version&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;0.2.0&quot;</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">&quot;configurations&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+    <span class="hljs-punctuation">{</span>
+      <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Python: Current File&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;python&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;request&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;launch&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;program&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;${file}&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;console&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;integratedTerminal&quot;</span>
+    <span class="hljs-punctuation">}</span>
+  <span class="hljs-punctuation">]</span>
+<span class="hljs-punctuation">}</span>
+</code></pre>
 <footer>©2025 Satoshi Yoshimura</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="51" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
@@ -8387,7 +8379,342 @@ section img {
 .mermaid { 
   font-size: 16px;
 }
-;" data-marpit-pagination-total="51">
+;" data-marpit-pagination-total="53">
+<header>ゼロから始める Docker 入門</header>
+<h2 id="510-%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0">5.10 トラブルシューティング</h2>
+<div style="font-size: 20px;">
+<table>
+<thead>
+<tr>
+<th>問題</th>
+<th>解決策</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>コンテナが起動しない</td>
+<td>- Docker サービスの状態確認<br />- リソース制限の確認<br />- ログの確認</td>
+</tr>
+<tr>
+<td>パフォーマンスが悪い</td>
+<td>- ボリュームマウントの最適化<br />- WSL2 の使用（Windows）<br />- リソース割り当ての調整</td>
+</tr>
+<tr>
+<td>拡張機能が動作しない</td>
+<td>- 拡張機能の再インストール<br />- VS Code の再起動<br />- 互換性の確認</td>
+</tr>
+</tbody>
+</table>
+</div>
+<footer>©2025 Satoshi Yoshimura</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="52" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
+section {
+  font-family: &quot;Noto Sans JP&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, &quot;Hiragino Sans&quot;, Meiryo, sans-serif;
+  background-color: white;
+  font-size: 24px;
+  line-height: 1.5;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+/* 見出しのスタイル */
+h1 {
+  color: #230ee0;
+  font-size: 40px;
+  margin-bottom: 1em;
+}
+
+h2 {
+  color: #230ee0;
+  font-size: 32px;
+  margin-bottom: 0.8em;
+}
+
+/* リストのスタイル */
+ul, ol {
+  font-size: 22px;
+  margin-left: 1em;
+  line-height: 1.6;
+}
+
+/* ネストされたリストのスタイル */
+ul ul, ul ol, ol ul, ol ol {
+  font-size: 20px;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+/* リストアイテムの間隔 */
+li {
+  margin-bottom: 0.5em;
+}
+
+/* テキストのスタイル */
+p {
+  font-size: 24px;
+  margin-bottom: 1em;
+}
+
+/* コードブロックのスタイル */
+pre {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  padding: 1em;
+}
+
+/* ヘッダーとフッターのスタイル */
+header, footer {
+  color: #666;
+  font-size: 0.8em;
+}
+
+/* 画像のスタイル */
+section img {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+}
+
+/* Mermaidのフォントサイズ */
+.mermaid { 
+  font-size: 16px;
+}
+" lang="ja" data-marpit-pagination="52" style="--paginate:true;--header:ゼロから始める Docker 入門;--footer:©2025 Satoshi Yoshimura;--theme:default;--lang:ja;--style:/* プレゼンテーション全体のスタイル */
+section {
+  font-family: &quot;Noto Sans JP&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, &quot;Hiragino Sans&quot;, Meiryo, sans-serif;
+  background-color: white;
+  font-size: 24px;
+  line-height: 1.5;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+/* 見出しのスタイル */
+h1 {
+  color: #230ee0;
+  font-size: 40px;
+  margin-bottom: 1em;
+}
+
+h2 {
+  color: #230ee0;
+  font-size: 32px;
+  margin-bottom: 0.8em;
+}
+
+/* リストのスタイル */
+ul, ol {
+  font-size: 22px;
+  margin-left: 1em;
+  line-height: 1.6;
+}
+
+/* ネストされたリストのスタイル */
+ul ul, ul ol, ol ul, ol ol {
+  font-size: 20px;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+/* リストアイテムの間隔 */
+li {
+  margin-bottom: 0.5em;
+}
+
+/* テキストのスタイル */
+p {
+  font-size: 24px;
+  margin-bottom: 1em;
+}
+
+/* コードブロックのスタイル */
+pre {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  padding: 1em;
+}
+
+/* ヘッダーとフッターのスタイル */
+header, footer {
+  color: #666;
+  font-size: 0.8em;
+}
+
+/* 画像のスタイル */
+section img {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+}
+
+/* Mermaidのフォントサイズ */
+.mermaid { 
+  font-size: 16px;
+}
+;" data-marpit-pagination-total="53">
+<header>ゼロから始める Docker 入門</header>
+<h1 id="%E3%81%BE%E3%81%A8%E3%82%81">まとめ</h1>
+<ul>
+<li>Docker は、開発環境の標準化と共有を実現し、プロジェクトの一貫性を保つための強力なツール。</li>
+<li>コンテナ技術により、チーム開発の効率が大幅に向上し、メンバー間の環境差を解消する。</li>
+<li>Docker Compose を使用することで、複数のサービスを簡単に管理・実行でき、開発環境の<br />
+再現性が向上する。</li>
+<li>VS Code との深い統合により、開発者は直感的に作業でき、迅速なフィードバックを得られる。</li>
+<li>適切な設定と運用により、開発ワークフローを最適化し、トラブルシューティングの時間を短縮する。</li>
+<li>Dev Container を利用することで、開発環境の構築が簡素化され、新メンバーの参加がスムーズに。</li>
+</ul>
+<footer>©2025 Satoshi Yoshimura</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="53" data-paginate="true" data-header="ゼロから始める Docker 入門" data-footer="©2025 Satoshi Yoshimura" data-theme="default" data-lang="ja" data-style="/* プレゼンテーション全体のスタイル */
+section {
+  font-family: &quot;Noto Sans JP&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, &quot;Hiragino Sans&quot;, Meiryo, sans-serif;
+  background-color: white;
+  font-size: 24px;
+  line-height: 1.5;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+/* 見出しのスタイル */
+h1 {
+  color: #230ee0;
+  font-size: 40px;
+  margin-bottom: 1em;
+}
+
+h2 {
+  color: #230ee0;
+  font-size: 32px;
+  margin-bottom: 0.8em;
+}
+
+/* リストのスタイル */
+ul, ol {
+  font-size: 22px;
+  margin-left: 1em;
+  line-height: 1.6;
+}
+
+/* ネストされたリストのスタイル */
+ul ul, ul ol, ol ul, ol ol {
+  font-size: 20px;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+/* リストアイテムの間隔 */
+li {
+  margin-bottom: 0.5em;
+}
+
+/* テキストのスタイル */
+p {
+  font-size: 24px;
+  margin-bottom: 1em;
+}
+
+/* コードブロックのスタイル */
+pre {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  padding: 1em;
+}
+
+/* ヘッダーとフッターのスタイル */
+header, footer {
+  color: #666;
+  font-size: 0.8em;
+}
+
+/* 画像のスタイル */
+section img {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+}
+
+/* Mermaidのフォントサイズ */
+.mermaid { 
+  font-size: 16px;
+}
+" lang="ja" data-marpit-pagination="53" style="--paginate:true;--header:ゼロから始める Docker 入門;--footer:©2025 Satoshi Yoshimura;--theme:default;--lang:ja;--style:/* プレゼンテーション全体のスタイル */
+section {
+  font-family: &quot;Noto Sans JP&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, &quot;Hiragino Sans&quot;, Meiryo, sans-serif;
+  background-color: white;
+  font-size: 24px;
+  line-height: 1.5;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+/* 見出しのスタイル */
+h1 {
+  color: #230ee0;
+  font-size: 40px;
+  margin-bottom: 1em;
+}
+
+h2 {
+  color: #230ee0;
+  font-size: 32px;
+  margin-bottom: 0.8em;
+}
+
+/* リストのスタイル */
+ul, ol {
+  font-size: 22px;
+  margin-left: 1em;
+  line-height: 1.6;
+}
+
+/* ネストされたリストのスタイル */
+ul ul, ul ol, ol ul, ol ol {
+  font-size: 20px;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+/* リストアイテムの間隔 */
+li {
+  margin-bottom: 0.5em;
+}
+
+/* テキストのスタイル */
+p {
+  font-size: 24px;
+  margin-bottom: 1em;
+}
+
+/* コードブロックのスタイル */
+pre {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  padding: 1em;
+}
+
+/* ヘッダーとフッターのスタイル */
+header, footer {
+  color: #666;
+  font-size: 0.8em;
+}
+
+/* 画像のスタイル */
+section img {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+}
+
+/* Mermaidのフォントサイズ */
+.mermaid { 
+  font-size: 16px;
+}
+;" data-marpit-pagination-total="53">
 <header>ゼロから始める Docker 入門</header>
 <h1 id="%E5%8F%82%E8%80%83%E8%B3%87%E6%96%99">参考資料</h1>
 <ul>

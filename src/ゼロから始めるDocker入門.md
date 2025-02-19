@@ -102,24 +102,51 @@ mermaid.initialize({ startOnLoad: true });
 # 目次
 
 1. Docker の基礎知識
+
    - なぜ Docker が必要か？
    - 環境構築の課題
    - 仮想環境の種類
-2. 環境準備
-   - Docker のインストール
-   - 基本的なコマンド
-   - ターミナルの使い方
+   - コンテナの登場
+   - 仮想マシン vs コンテナ
+   - 仮想化の 5 レベル
+   - Docker のイメージ
 
 ---
 
+2. 環境準備
+
+   - Docker のインストール
+   - 基本的なコマンド
+
 3. Docker の実践
-   - コンテナの基本操作
-   - Docker Compose 入門
-   - イメージの管理
-4. 応用編と devcontainer
-   - Docker Hub の活用
-   - VSCode と devcontainer
-   - ベストプラクティス
+
+   - Docker の基本操作
+   - Dockerfile の作成
+   - イメージのビルドと実行
+
+---
+
+4. Docker Compose 入門
+
+   - Docker Compose とは
+   - Docker と Docker Compose の違い
+   - Docker Compose のメリット
+   - compose.yaml の基本構造
+   - インストールと基本コマンド
+   - 実践例：Go アプリケーション環境の構築
+
+---
+
+5. Dev Container 入門
+   - devcontainer とは
+   - devcontainer のメリット
+   - システム要件とインストール
+   - 基本的な使い方
+   - Dev Container Features
+   - 実践的な例：Python プロジェクト
+   - 高度な設定
+   - デバッグ設定
+   - トラブルシューティング
 
 ---
 
