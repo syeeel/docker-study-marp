@@ -452,7 +452,7 @@ Docker Compose は、複数の Docker コンテナを効率的に管理・実行
 
 ---
 
-## 4.3Docker Compose のメリット
+## 4.3 Docker Compose のメリット
 
 1. **複数コンテナの簡単な管理**
    - 複数のコンテナを 1 つのコマンドで起動/停止
@@ -469,7 +469,7 @@ Docker Compose は、複数の Docker コンテナを効率的に管理・実行
 
 ---
 
-## 4.3 compose.yaml の基本構造
+## 4.4 compose.yaml の基本構造
 
 compose.yaml は Docker Compose の設定ファイルです。以下は基本的な構造例です：
 
@@ -511,7 +511,7 @@ volumes:
 
 ---
 
-## 4.3 Docker Compose のインストール
+## 4.5 Docker Compose のインストール
 
 ```bash
 # Macの場合（Homebrew）
@@ -524,7 +524,7 @@ brew install docker-compose
 
 ---
 
-## 4.4 Docker Compose の基本的なコマンド
+## 4.6 Docker Compose の基本的なコマンド
 
 ```bash
 # コンテナの起動（バックグラウンド実行）
@@ -545,7 +545,7 @@ docker compose ps
 
 ---
 
-## 4.5 実践例：Go アプリケーション環境の構築
+## 4.7 実践例：Go アプリケーション環境の構築
 
 以下は、Go のシンプルな API サーバーを構築する例です：
 
@@ -863,7 +863,7 @@ USER vscode
 
 ---
 
-## 4.8 高度な設定
+## 5.8 高度な設定
 
 ### ボリュームマウントの最適化
 
@@ -889,7 +889,7 @@ USER vscode
 
 ---
 
-## 4.9 デバッグ設定
+## 5.9 デバッグ設定
 
 ### launch.json の例（Python）
 
@@ -910,7 +910,7 @@ USER vscode
 
 ---
 
-## 4.10 トラブルシューティング
+## 5.10 トラブルシューティング
 
 <div style="font-size: 20px;">
 
