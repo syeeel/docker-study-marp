@@ -125,22 +125,13 @@ mermaid.initialize({ startOnLoad: true });
 
 # 1. Docker の基礎知識
 
-<pre class="mermaid">
-mindmap
-  root((Docker))
-    環境の統一
-      ローカル環境
-      サーバー環境
-      チーム開発
-    コンテナ化
-      アプリケーション
-      依存関係
-      設定
-    効率的な開発
-      迅速なデプロイ
-      スケーラビリティ
-      保守性
-</pre>
+<div style="text-align: center; margin-bottom: 40px;">
+  Docker は、アプリケーションをコンテナ化して開発、配布、実行するためのプラットフォームです。
+</div>
+
+<div style="display: flex; justify-content: center;">
+    <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="Docker" style="border-radius: 10px; width: 30%;">
+</div>
 
 ---
 
