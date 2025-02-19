@@ -94,7 +94,7 @@ mermaid.initialize({ startOnLoad: true });
 # ゼロから始める Docker 入門
 
 <div style="display: flex; justify-content: center;">
-    <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="Docker" style="border-radius: 10px; width: 30%;">
+    <img src="https://kazulog.fun/wp-content/uploads/2023/12/Docker-Logo.png" alt="Docker" style="border-radius: 10px; width: 50%;">
 </div>
 
 ---
@@ -130,7 +130,7 @@ mermaid.initialize({ startOnLoad: true });
 </div>
 
 <div style="display: flex; justify-content: center;">
-    <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="Docker" style="border-radius: 10px; width: 30%;">
+    <img src="https://kazulog.fun/wp-content/uploads/2023/12/Docker-Logo.png" alt="Docker" style="border-radius: 10px; width: 50%;">
 </div>
 
 ---
@@ -806,7 +806,7 @@ myproject/
 
 <div style="text-align: center;">
 <p>VS Code 左下のメニューから「Dev Container」を選択する</p>
-  <img src="../docs/images/vscode-devcontainer-menu.png" alt="Dev Container Architecture" style="border-radius: 10px; width: 300px; margin: 10px auto;">
+  <img src="https://industrial-inference.com/wp-content/uploads/2023/08/image.png" style="border-radius: 10px; width: 300px; margin: 10px auto;">
 </div>
 
 <div style="text-align: center;">
